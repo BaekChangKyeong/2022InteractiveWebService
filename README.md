@@ -19,7 +19,7 @@ Stack Version
    SpringBoot:
 
 5. Frontend  
-   javascript: 1.7
+   javascript: 1.7  
    React
 
 6. Browser  
