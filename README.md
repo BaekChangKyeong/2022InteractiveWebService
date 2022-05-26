@@ -20,7 +20,7 @@ Stack Version
 
 5. Frontend  
    javascript: 1.7  
-   React: npm 6.14.4
+   React: npm 6.14.4 (react-bootstrap@2.4.0, bootstrap@5.1.3)
 
 6. Browser  
    Chrome: 102.0.5005.63 (2022-05-25 Latest, Continuosly Update)
