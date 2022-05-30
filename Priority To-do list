@@ -1,0 +1,7 @@
+1. DB 테이블 설계
+2. BootStrap 선정
+3. Pom.XML vs Gradle 선정 (Dependency)
+4. 5월 31일에 화면 설계서 받으면 선정한 BootStrap 이용해 화면 구성.
+5. DB 테이블에 데이터 입력.
+6. DB - Front 연동 테스트
+7. 샘플 데이터 받아서 예시 프로필 화면 구성.
