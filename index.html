@@ -38,35 +38,41 @@
             </div>
         </nav>
         <!-- Page content-->
-        <div class="container">
+        <!-- <div class="container">
             <div class="text-center mt-5">
                 <div class="ball"></div>
             </div>
-        </div>
-        
+        </div> -->
+        <div class="ball"></div>
         <html>
         <style>
         .middle {
           /* 이하 필수 설정 */
           position: absolute; left: 50%; top: 50%; 
           transform: translate(-50%, -50%); text-align: center;
+          z-index: 1;
           background: false;
+          
         }
 
         .ball {
-            border-radius: 80%;
+            border-radius: 100%;
             height: 100px;
             width: 100px;
-            z-index: 999;
+            z-index: 2;
             transform:
-                translateX(calc(var(--mouse-x) * 0.2px))
-                translateY(calc(var(--mouse-y) * 0.2px));
+                translateX(calc(var(--mouse-x) * 1px))
+                translateY(calc(var(--mouse-y) * 1px));
             background: goldenrod;
+            opacity: 99;
+            position: fixed;
         }
         </style>
         <body>
         <div class="middle">
-            <h1>B:LOCK</h1>
+            <div>
+                <h1>B:LOCK</h1>
+            </div>
         </div>
         </body>
 
