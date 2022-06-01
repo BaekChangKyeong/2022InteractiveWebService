@@ -1,0 +1,31 @@
+<div class="ball"></div>
+<div class="ball"></div>
+
+<!DOCTYPE html>
+<html>
+<style>
+.middle {
+  /* 이하 필수 설정 */
+  position: absolute; left: 50%; top: 50%; 
+  transform: translate(-50%, -50%); text-align: center;
+  background: false;
+}
+
+.ball {
+  border-radius: 80%;
+  height: 100px;
+  width: 100px;
+  z-index: 999;
+  transform:
+    translateX(calc(var(--mouse-x) * 0.2px))
+    translateY(calc(var(--mouse-y) * 0.2px));
+  background: goldenrod;
+}
+
+</style>
+<body>
+<div class="middle">
+    <h1>B:LOCK</h1>
+</div>
+</body>
+</html>
