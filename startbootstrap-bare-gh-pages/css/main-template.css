@@ -1,7 +1,7 @@
 /* // DEMO STYLES
 // ========================================================== */
 /*$bg:#252329;*/
-html,body{height:100%;}body{display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;}
+/* html,body{height:100%;}body{display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;} */
 
 
 /* // REQUIRED STYLES
@@ -16,4 +16,79 @@ html,body{height:100%;}body{display:flex;flex-direction:column;align-items:cente
     translateX(calc(var(--mouse-x) * 0.2px))
     translateY(calc(var(--mouse-y) * 0.2px));
   background: goldenrod;
+}
+
+/* 저작권 style css */
+
+#wrap {
+  /* min-height: 100%; */
+  position: absolute;
+  padding-bottom: 130px;
+  /* width: 100%; */
+  color: black;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  position: absolute;
+  /* transform: translateY(-50%); */
+  background-color: black;
+  color: aliceblue;
+}
+
+section {
+  padding-bottom: 130px; /*footer의 height 값과 동일*/
+  /* background-color: black; */
+}
+
+html,
+body {
+  height: 100%;
+  /* margin-left: 100px;
+  margin-right: 100px; */
+  /* margin: 0;
+  padding: 0; */
+}
+
+.middle {
+  /* 이하 필수 설정 */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  /* color: black; */
+  background: false;
+}
+
+.posterbox {
+  position: relative;
+  width: 80px;
+  top: 80px;
+  left: 100px;
+  margin-top: -26px;
+  /* padding-bottom: 20%; */
+  background-color: aliceblue;
+  color: aliceblue;
+}
+
+.posterbox:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.ball {
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  z-index: 2;
+  transform: translateX(calc(var(--mouse-x) * 1px))
+    translateY(calc(var(--mouse-y) * 1px));
+  background: goldenrod;
+  opacity: 99;
+  position: fixed;
 }
