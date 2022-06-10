@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="cursor: pointer">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -15,7 +15,7 @@
     <link href="startbootstrap-bare-gh-pages/css/styles.css" rel="stylesheet" />
     <link
       href="startbootstrap-bare-gh-pages/css/main-template.css"
-      rel="stylesheet"
+      rel="sytlesheet"
     />
   </head>
   <body>
@@ -67,8 +67,99 @@
             </div>
         </div> -->
     <div class="ball"></div>
+    <div class="ball2"></div>
+
     <html>
-      
+      <style>
+        /* 저작권 style css */
+        #wrap {
+          min-height: 100%;
+          position: relative;
+          padding-bottom: 130px;
+          /* width: 100%; */
+          color: black;
+        }
+
+        .footer {
+          width: 100%;
+          height: 100%;
+          bottom: 0;
+          position: relative;
+          transform: translateY(-50%);
+          background-color: black;
+          color: aliceblue;
+        }
+
+        section {
+          padding-bottom: 130px; /*footer의 height 값과 동일*/
+          /* background-color: black; */
+        }
+
+        html,
+        body {
+          height: 100%;
+          /* margin-left: 100px;
+          margin-right: 100px; */
+          /* margin: 0;
+          padding: 0; */
+        }
+
+        .middle {
+          /* 이하 필수 설정 */
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          z-index: 1;
+          /* color: black; */
+          background: false;
+        }
+
+        .posterbox {
+          position: relative;
+          width: 80px;
+          top: 80px;
+          left: 100px;
+          /* padding-bottom: 20%; */
+          background-color: aliceblue;
+          color: aliceblue;
+        }
+
+        .posterbox:before {
+          content: "";
+          display: block;
+          padding-top: 100%;
+        }
+
+        .ball {
+          border-radius: 100%;
+          height: 100px;
+          width: 100px;
+          top: 45%;
+          left: 45%;
+          z-index: 2;
+          transform: translateX(calc(var(--mouse-x) * 0.1px))
+            translateY(calc(var(--mouse-y) * 0.1px));
+          background: goldenrod;
+          opacity: 99;
+          position: fixed;
+        }
+
+        .ball2 {
+          border-radius: 100%;
+          height: 100px;
+          width: 100px;
+          top: 40%;
+          left: 40%;
+          z-index: 2;
+          transform: translateX(calc(var(--mouse-x) * 0.1px - 100px))
+            translateY(calc(var(--mouse-y) * 0.1px - 100px));
+          background: green;
+          opacity: 99;
+          position: fixed;
+        }
+      </style>
       <body>
         <!-- 제목영역 -->
         <div class="middle">
@@ -102,7 +193,7 @@
             <span>Interdisciplinary Design</span><br />
             <span>class of 2014, 2015, 2019 All Right Reserved.</span>
           </div> -->
-          <div style="position: fixed; bottom: 70px; right: 100px">
+          <div style="position: fixed; bottom: 50px; right: 100px">
             <a href="#"> TOP </a>
           </div>
         </footer>
