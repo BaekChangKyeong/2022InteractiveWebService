@@ -1,53 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" style="cursor: pointer">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>2022 KYU B:LOCK</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="asset" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="startbootstrap-bare-gh-pages/css/styles.css" rel="stylesheet" />
-    <link
-      href="startbootstrap-bare-gh-pages/css/main-template.css"
-      rel="sytlesheet"
-    />
-  </head>
-  <body>
-    <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar-white bg-white">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">B:LOCK</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Projects</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Designer</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Guest Book</a>
-            </li>
-            <!-- <li class="nav-item dropdown">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>2022 KYU B:LOCK</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="asset" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="startbootstrap-bare-gh-pages/css/styles.css" rel="stylesheet" />
+  <link href="startbootstrap-bare-gh-pages/css/main-template.css" rel="sytlesheet" />
+</head>
+
+<body>
+  <!-- Responsive navbar-->
+  <nav class="navbar navbar-expand-lg navbar-white bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">B:LOCK</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Designer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Guest Book</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -56,154 +43,197 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li> -->
-          </ul>
-        </div>
+        </ul>
       </div>
-    </nav>
-    <!-- Page content-->
-    <!-- <div class="container">
+    </div>
+  </nav>
+  <!-- Page content-->
+  <!-- <div class="container">
             <div class="text-center mt-5">
                 <div class="ball"></div>
             </div>
         </div> -->
+
+  <!--ball div-->
+  <div>
     <div class="ball"></div>
     <div class="ball2"></div>
+    <div class="ball3"></div>
+    <div class="ball4"></div>
+    <div class="ball5"></div>
+  </div>
+  <html>
+  <style>
+    /* 저작권 style css */
+    #wrap {
+      min-height: 100%;
+      position: relative;
+      padding-bottom: 130px;
+      /* width: 100%; */
+      color: black;
+    }
 
-    <html>
-      <style>
-        /* 저작권 style css */
-        #wrap {
-          min-height: 100%;
-          position: relative;
-          padding-bottom: 130px;
-          /* width: 100%; */
-          color: black;
-        }
+    .footer {
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      position: relative;
+      transform: translateY(-50%);
+      background-color: black;
+      color: aliceblue;
+    }
 
-        .footer {
-          width: 100%;
-          height: 100%;
-          bottom: 0;
-          position: relative;
-          transform: translateY(-50%);
-          background-color: black;
-          color: aliceblue;
-        }
+    section {
+      padding-bottom: 130px;
+      /*footer의 height 값과 동일*/
+      /* background-color: black; */
+    }
 
-        section {
-          padding-bottom: 130px; /*footer의 height 값과 동일*/
-          /* background-color: black; */
-        }
-
-        html,
-        body {
-          height: 100%;
-          /* margin-left: 100px;
+    html,
+    body {
+      height: 100%;
+      /* margin-left: 100px;
           margin-right: 100px; */
-          /* margin: 0;
+      /* margin: 0;
           padding: 0; */
-        }
+    }
 
-        .middle {
-          /* 이하 필수 설정 */
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center;
-          z-index: 1;
-          /* color: black; */
-          background: false;
-        }
+    .middle {
+      /* 이하 필수 설정 */
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 1;
+      /* color: black; */
+      background: false;
+    }
 
-        .posterbox {
-          position: relative;
-          width: 80px;
-          top: 80px;
-          left: 100px;
-          /* padding-bottom: 20%; */
-          background-color: aliceblue;
-          color: aliceblue;
-        }
+    .posterbox {
+      position: relative;
+      width: 80px;
+      top: 80px;
+      left: 100px;
+      /* padding-bottom: 20%; */
+      background-color: aliceblue;
+      color: aliceblue;
+    }
 
-        .posterbox:before {
-          content: "";
-          display: block;
-          padding-top: 100%;
-        }
+    .posterbox:before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
 
-        .ball {
-          border-radius: 100%;
-          height: 100px;
-          width: 100px;
-          top: 45%;
-          left: 45%;
-          z-index: 2;
-          transform: translateX(calc(var(--mouse-x) * 0.1px))
-            translateY(calc(var(--mouse-y) * 0.1px));
-          background: goldenrod;
-          opacity: 99;
-          position: fixed;
-        }
+    .ball {
+      border-radius: 100%;
+      height: 100px;
+      width: 100px;
+      top: 400px;
+      left: 400px;
+      z-index: 2;
+      /* transform: translateX(calc(var(--mouse-x) * 0.1px)) translateY(calc(var(--mouse-y) * 0.1px)); */
+      background: goldenrod;
+      opacity: 99;
+      position: fixed;
+    }
 
-        .ball2 {
-          border-radius: 100%;
-          height: 100px;
-          width: 100px;
-          top: 40%;
-          left: 40%;
-          z-index: 2;
-          transform: translateX(calc(var(--mouse-x) * 0.1px - 100px))
-            translateY(calc(var(--mouse-y) * 0.1px - 100px));
-          background: green;
-          opacity: 99;
-          position: fixed;
-        }
-      </style>
-      <body>
-        <!-- 제목영역 -->
-        <div class="middle">
-          <div>
-            <h1>B:LOCK</h1>
-          </div>
+    .ball2 {
+      border-radius: 100%;
+      height: 100px;
+      width: 100px;
+      top: 200px;
+      left: 200px;
+      z-index: 2;
+      background: green;
+      opacity: 99;
+      position: fixed;
+    }
+    .ball3 {
+      border-radius: 100%;
+      height: 100px;
+      width: 100px;
+      top: 250px;
+      left: 250px;
+      z-index: 2;
+      background: green;
+      opacity: 99;
+      position: fixed;
+    }
+    .ball4 {
+      border-radius: 100%;
+      height: 100px;
+      width: 100px;
+      top: 300px;
+      left: 300px;
+      z-index: 2;
+      background: green;
+      opacity: 99;
+      position: fixed;
+    }
+    .ball5 {
+      border-radius: 100%;
+      height: 100px;
+      width: 100px;
+      top: 350px;
+      left: 350px;
+      z-index: 2;
+      background: green;
+      opacity: 99;
+      position: fixed;
+    }
+  </style>
+
+  <body>
+    <!-- 제목영역 -->
+    <div class="middle">
+      <div>
+        <h1>B:LOCK</h1>
+      </div>
+    </div>
+
+    <div id="wrap">
+      <section>blah blah</section>
+    </div>
+
+    <!-- 저작권 영역 -->
+    <footer class="footer" style="height: 180px">
+      <!-- <div> -->
+      <div style="float: left">
+        <div class="posterbox">
+          <div class="content"></div>
         </div>
-
-        <div id="wrap">
-          <section>blah blah</section>
+        <div style="position: fixed; left: 200px">
+          <span>Konyang University</span><br />
+          <span>Interdisciplinary Design</span><br />
+          <span>2022 6th Graudation Exhibition</span>
         </div>
-
-        <!-- 저작권 영역 -->
-        <footer class="footer" style="height: 180px">
-          <!-- <div> -->
-          <div style="float: left">
-            <div class="posterbox">
-              <div class="content"></div>
-            </div>
-            <div style="position: fixed; left: 200px">
-              <span>Konyang University</span><br />
-              <span>Interdisciplinary Design</span><br />
-              <span>2022 6th Graudation Exhibition</span>
-            </div>
-          </div>
-          <!-- </div> -->
-          <!-- <div style="position: inherit; left: 300px">
+      </div>
+      <!-- </div> -->
+      <!-- <div style="position: inherit; left: 300px">
             <span>Konyang University</span><br />
             <br />
             <span>2022 6th Graudation Exhibition</span><br />
             <span>Interdisciplinary Design</span><br />
             <span>class of 2014, 2015, 2019 All Right Reserved.</span>
           </div> -->
-          <div style="position: fixed; bottom: 50px; right: 100px">
-            <a href="#"> TOP </a>
-          </div>
-        </footer>
+      <div style="position: fixed; bottom: 50px; right: 100px">
+        <a href="#"> TOP </a>
+      </div>
+    </footer>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="startbootstrap-bare-gh-pages/js/main-template.js"></script>
-        <!-- Core theme JS-->
-        <script src="startbootstrap-bare-gh-pages/js/scripts.js"></script>
-      </body>
-    </html>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="startbootstrap-bare-gh-pages/js/main-template.js"></script>
+    <!-- Core theme JS-->
+    <script src="startbootstrap-bare-gh-pages/js/scripts.js"></script>
+    
+    <!-- jquery 최신 -->
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
   </body>
+
+  </html>
+</body>
+
 </html>
