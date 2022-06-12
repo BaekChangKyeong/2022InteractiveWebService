@@ -10,6 +10,40 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+/* 글자 나타났다가 사라지는 효과 */
+.fade-in-box {
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: inline-block;
+  background: white;
+  padding: 5px;
+  height: 10px;
+  animation-name: fadein, fadeout;
+  animation-iteration-count: infinite;
+  animation-duration: 3s, 3s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
