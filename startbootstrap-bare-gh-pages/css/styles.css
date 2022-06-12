@@ -10,6 +10,27 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+.width-100pct {
+  width: 100%;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.profile-picture-line {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.profile-picture-1 {
+  /* display: none; */
+  width: 100%;
+  position: absolute;
+}
+
+
 /* 글자 나타났다가 사라지는 효과 */
 .fade-in-box {
   bottom: 0;
@@ -300,7 +321,7 @@ sup {
 
 a {
   color: #0d6efd;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: #0a58ca;
