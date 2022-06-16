@@ -11,25 +11,67 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-.width-100pct {
-  width: 100%;
-  padding-left: 140px;
-  padding-right: 140px;
+.name {
 }
 
-.profile-picture-line {
+.grid-image {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 216px 280px;
+}
+.grid-image img {
+  /* width: calc(33.333% - 10px); */
+  margin: 0 80px 20px 0;
+}
+.grid-image img:nth-of-type(3n),
+.grid-image img:last-child {
+  margin-right: 0;
+}
+/* @media screen and (max-width: 640px) {
+  .grid-image img {
+    width: calc(50% - 15px);
+  }
+} */
+@media screen and (max-width: 414px) {
+  .grid-image img:nth-of-type(2n) {
+    margin-right: 20px;
+  }
+  .grid-image img:nth-of-type(3n) {
+    margin-right: 20px;
+  }
+}
+
+.width-100pct {
   width: 100%;
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-top: 216px;
+}
+
+.profile-picture-line-left {
+  width: 100%;
+  margin-left: 140px;
+  margin-right: 140px;
   display: inline-block;
   vertical-align: top;
   position: relative;
 }
 
-.profile-picture-1 {
-  /* display: none; */
+.profile-picture-line-mid {
   width: 100%;
+  margin-left: 720px;
+  /* display: inline-block; */
+  vertical-align: top;
   position: absolute;
 }
 
+.profile-picture-1 {
+  /* display: none; */
+  width: 414px;
+  height: 540px;
+  position: relative;
+}
 
 /* 글자 나타났다가 사라지는 효과 */
 .fade-in-box {
