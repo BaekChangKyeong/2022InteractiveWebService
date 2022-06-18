@@ -39,6 +39,7 @@ document.addEventListener("mousemove", function (e) {
     $(".ball4").css("left", ball4_x + (ball4_x - e.clientX) / 5);
     $(".ball4").css("top", ball4_y + (ball4_y - e.clientY) / 5);
   }
+
   var ball5_x = parseInt($(".ball5").css("left"));
   var ball5_y = parseInt($(".ball5").css("top"));
 
