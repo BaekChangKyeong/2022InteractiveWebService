@@ -47,11 +47,11 @@
   flex-wrap: wrap;
   align-items: flex-start;
   /* width: 100%; */
-  margin: 10% 20% 0% 20%;
+  margin: 5% 10% 0% 10%;
   /* margin-left: 10%; */
 }
 .grid-image img {
-  /* width: calc(%); */
+  /* width: calc(10%-10px); */
   height: auto;
   width: 100%;
   /* padding-left: 5%; */
@@ -66,7 +66,7 @@
   .grid-image img {
     width: 100%;
     height: auto;
-    /* transform: translateY(-10%) translateX(-10%); */
+    /* transform: translateY(10%) translateX(10%); */
     /* display: block; */
     /* text-align: end; */
     /* width: calc(100% - 10px); */
