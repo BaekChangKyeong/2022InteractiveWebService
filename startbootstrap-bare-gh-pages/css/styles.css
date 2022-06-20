@@ -179,13 +179,13 @@
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  #wrapper {
+@media only screen and (min-width: 769px) and (max-width: 1550px) {
+  #wrapper #container-out {
     padding-left: 1%;
     padding-right: 1%;
   }
   .visible {
-    width: 45%;
+    max-width: 45%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
