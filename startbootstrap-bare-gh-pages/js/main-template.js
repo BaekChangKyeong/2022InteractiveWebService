@@ -11,10 +11,10 @@ document.addEventListener("mousemove", function (e) {
   var ball_x = parseInt($(".ball").css("left"));
   var ball_y = parseInt($(".ball").css("top"));
 
-  // console.log("ball2_x", ball2_x);
-  // console.log("mouse x", e.clientX);
-  // console.log("ball2_y", ball2_y);
-  // console.log("mouse y", e.clientY);
+  console.log(ball2_x);
+  console.log(e.clientX);
+  console.log(ball2_y);
+  console.log(e.clientY);
 
   if (Math.abs(ball2_x - e.clientX) + Math.abs(ball2_y - e.clientY) < 100) {
     $(".ball2").css("left", ball2_x + (ball2_x - e.clientX) / 5);
