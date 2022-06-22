@@ -233,7 +233,7 @@
   text-align: left;
   visibility: visible;
   margin-bottom: 1em;
-  font-size: 22pt;
+  font-size: 20pt;
   font-weight: 500;
   word-break: keep-all;
   color: #000000;
@@ -287,6 +287,18 @@
   }
   .gallery-text {
     margin: 1em;
+    box-sizing: border-box;
+    display: block;
+    text-align: left;
+    visibility: visible;
+    margin-bottom: 1em;
+    font-size: 10pt;
+    font-weight: 500;
+    word-break: keep-all;
+    color: #000000;
+  }
+  .gallery-project-text {
+    margin: 20px 0px 0px 0px;
     box-sizing: border-box;
     display: block;
     text-align: left;
