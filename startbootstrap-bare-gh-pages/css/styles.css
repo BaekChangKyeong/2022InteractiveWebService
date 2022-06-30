@@ -324,13 +324,22 @@
   width: 100%;
   max-width: 100%;
   height: auto;
-  /* filter: grayscale(0);
+  filter: grayscale(1);
   transition: filter 0.5s;
-  transition-property: filter; */
+  transition-property: filter;
   transition-duration: 0.5s;
   transition-timing-function: ease;
   transition-delay: 0s;
   vertical-align: middle;
+}
+
+.img-src:hover {
+  filter: grayscale(0);
+  transition: filter 0.5s;
+  transition-property: filter;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
 }
 
 @media only screen and (max-width: 768px) {
