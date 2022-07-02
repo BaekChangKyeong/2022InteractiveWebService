@@ -111,6 +111,22 @@ ul {
   z-index: 1;
 }
 
+
+
+
+table th , table td{
+  text-align: center;
+}
+
+.pagination li:hover{
+  cursor: pointer;
+}
+  table tbody tr {
+    display: none;
+  }
+
+
+
 /* .project-img-src {
   margin: 0;
   padding: 0;
