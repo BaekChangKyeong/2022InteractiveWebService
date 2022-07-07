@@ -9,7 +9,6 @@ getPagination('#table-id');
 - fade out all tr lt max rows * li num - max rows ((5*pagenum 2 = 10) - 5)
 - fade in all tr between (maxRows*PageNum) and (maxRows*pageNum)- MaxRows 
 */
-console.log("load pagination");
 
 function getPagination(table) {
   var lastPage = 1;
