@@ -606,6 +606,12 @@ table th , table td{
 }
 
 
+/* 댓글창 */
+.comment_container{
+  display: flex;
+  flex-direction: column;
+}
+
 /* 페이징 적용 */
 
 .pagination-nav{
