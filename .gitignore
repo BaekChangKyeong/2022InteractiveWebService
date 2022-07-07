@@ -1,2 +1,4 @@
 *.zip
 settings.json
+venv
+__pycache__
