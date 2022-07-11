@@ -1,9 +1,0 @@
-{
-    "DB": {
-        "user": "root",
-        "password": "space-x2022",
-        "host": "stapl.iptime.org",
-        "port": "51238",
-        "database": "iws_db"
-    }
-}
