@@ -1,11 +1,41 @@
-from fastapi import FastAPI, Depends, Path, HTTPException
+from fastapi import FastAPI, Depends, Path, HTTPException, APIRouter
 from sqlalchemy.orm import Session
 from fastapi.requests import Request
-
+from fastapi.templating import Jinja2Templates
+from fastapi.staticfiles import StaticFiles 
 # from fastapi.model import guestbook
 import model, database
 
 app = FastAPI()
+
+templates = Jinja2Templates(directory="templates")
+app.mount("/static", StaticFiles(directory="static"), name="static") 
+general_pages_router = APIRouter()
+
+# get index page
+@app.get(path="/")
+def home(request: Request):
+    return templates.TemplateResponse("index.html", {"request":request})
+
+# get designer page
+@app.get(path="/designer")
+def home(request: Request):
+    return templates.TemplateResponse("Designer.html", {"request":request})
+
+# get guest page
+@app.get(path="/guest")
+def home(request: Request):
+    return templates.TemplateResponse("Guest.html", {"request":request})
+
+# get about page
+@app.get(path="/about")
+def home(request: Request):
+    return templates.TemplateResponse("About.html", {"request":request})
+
+# get project page
+@app.get(path="/project")
+def home(request: Request):
+    return templates.TemplateResponse("Project.html", {"request":request})
 
 # example
 @app.get(path="/guestbook/{id}")

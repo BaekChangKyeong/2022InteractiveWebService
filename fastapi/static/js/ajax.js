@@ -2,11 +2,10 @@ function get_list() {
     console.log("get_list")
     $.ajax({
         url: '/guestbook',
-        type: 'GET',
-        cache: false,
+        method: 'GET',
         async: false,
         timeout: 10000, // 10초
-        contentType: 'application/json; charset=UTF-8',
+        data:"",
         dataType: "JSON",
         beforeSend: function () { },
         success: function (response) {
