@@ -24,8 +24,8 @@ class insert_guestbook(BaseModel):
     designer : str
     writer : str
     content : str
-    wdate : datetime
-    flag : bool
+    wdate : Optional[datetime]
+    flag : Optional[bool] = 1
     # id = Column(Integer, primary_key=True, index=True)
     # designer = Column(String, nullable=False)
     # writer = Column(String, nullable=False)

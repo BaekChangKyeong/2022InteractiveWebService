@@ -64,7 +64,7 @@ def get_guestbook(db: Session = Depends(database.get_db)):
     return res
 
 # post guestbook data
-@app.post(path="/guestbook")
+@app.post(path="/insertbook")
 async def insert_guestbook(req: model.insert_guestbook, db: Session = Depends(database.get_db)):
     new_guestbook = model.guestbook(**req.dict())
     db.add(new_guestbook)
