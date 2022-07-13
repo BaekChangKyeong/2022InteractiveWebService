@@ -1,4 +1,6 @@
-$(document).ready(function update_list() {
+$(document).ready(update_list())
+
+function update_list() {
     console.log("get_list")
     $.ajax({
         url: '/guestbook',
@@ -11,6 +13,7 @@ $(document).ready(function update_list() {
         success: function (response) {
             // alert(response[0].designer)
             console.log(response)
+            $('#table-id > tbody').empty()
             $.each(response, function (i, row) {
                 i = i + 1
                 element = "<tr style='display: table-row;'>" + "<td>" + i + "</td>" +
@@ -29,7 +32,7 @@ $(document).ready(function update_list() {
             console.log(error);
         }
     });
-});
+}
 
 // function get_list() {
 //     console.log("get_list")
@@ -75,5 +78,5 @@ function get_list() {
             "Content-Type": "application/json",
         },
         body: insert_db_data,
-    }).then((response) => console.log(response));
+    }).then(update_list());
 }

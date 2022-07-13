@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Depends, Path, HTTPException, APIRouter
+from sqlalchemy import desc
 from sqlalchemy.orm import Session
 from fastapi.requests import Request
 from fastapi.templating import Jinja2Templates
@@ -57,7 +58,7 @@ def get_place(
 # get guestbook data
 @app.get(path="/guestbook")
 def get_guestbook(db: Session = Depends(database.get_db)):
-    res = db.query(model.guestbook).all()
+    res = db.query(model.guestbook).order_by(desc(model.guestbook.id)).all()
 
     if res is None:
         raise HTTPException(status_code=404, detail="데이터가 없습니다.")
