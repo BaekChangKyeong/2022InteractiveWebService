@@ -2,3 +2,4 @@
 settings.json
 venv
 __pycache__
+dbconnection.json
