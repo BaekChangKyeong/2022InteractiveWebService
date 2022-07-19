@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- jquery -->
-<script src="https://code.jquery.com/jquery-latest.min.js"></script>
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="startbootstrap-bare-gh-pages/js/main-template.js"></script>
-<!-- Core theme JS-->
-<script src="startbootstrap-bare-gh-pages/js/scripts.js"></script>
 
 <head>
   <meta charset="utf-8" />
@@ -14,18 +7,17 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <title>2022 KYU B:LOCK</title>
-  <!-- Favicon-->
-  <link rel="icon" type="image/x-icon" href="asset" />
+
   <!-- Core theme CSS (includes Bootstrap)-->
-  <link href="startbootstrap-bare-gh-pages/css/main-template.css" rel="stylesheet" />
-  <link href="startbootstrap-bare-gh-pages/css/styles.css" rel="stylesheet" />
+  <link href="{{ url_for('static', path='/css/styles.css') }}" rel="stylesheet" />
+  <link href="{{ url_for('static', path='/css/main-template.css') }}" rel="stylesheet">
 </head>
 
 <body>
   <!-- Responsive navbar-->
   <nav class="navbar navbar-expand-lg navbar-black bg-white">
     <div class="container">
-      <a class="navbar-brand" href="About.html">B:LOCK</a>
+      <a class="navbar-brand" href="about">B:LOCK</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">
@@ -39,13 +31,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="Project.html">Projects</a>
+            <a class="nav-link active" aria-current="page" href="project">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Designer.html">Designer</a>
+            <a class="nav-link" href="designer">Designer</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Guest.html">Guest Book</a>
+            <a class="nav-link" href="guest">Guest Book</a>
           </li>
           <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
@@ -69,7 +61,7 @@
               <div class="gallery-content">
                 <div class="gallery-image">
                   <a href="projects/kimgunwoo.html">
-                    <img class="project-img-src" src="400x320.png" />
+                    <img class="project-img-src" src="../static/assets/projects/400x320.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
@@ -88,7 +80,7 @@
               <div class="gallery-content">
                 <div class="gallery-image">
                   <a href="">
-                    <img class="project-img-src" src="400x320.png" />
+                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
@@ -107,7 +99,7 @@
               <div class="gallery-content">
                 <div class="gallery-image">
                   <a href="">
-                    <img class="project-img-src" src="400x320.png" />
+                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
@@ -126,7 +118,7 @@
               <div class="gallery-content">
                 <div class="gallery-image">
                   <a href="">
-                    <img class="project-img-src" src="400x320.png" />
+                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
@@ -145,7 +137,7 @@
               <div class="gallery-content">
                 <div class="gallery-image">
                   <a href="">
-                    <img class="project-img-src" src="400x320.png" />
+                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
@@ -164,7 +156,7 @@
               <div class="gallery-content">
                 <div class="gallery-image">
                   <a href="">
-                    <img class="project-img-src" src="400x320.png" />
+                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
@@ -183,7 +175,7 @@
               <div class="gallery-content">
                 <div class="gallery-image">
                   <a href="">
-                    <img class="project-img-src" src="400x320.png" />
+                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
@@ -202,7 +194,7 @@
               <div class="gallery-content">
                 <div class="gallery-image">
                   <a href="">
-                    <img class="project-img-src" src="400x320.png" />
+                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
@@ -221,7 +213,7 @@
               <div class="gallery-content">
                 <div class="gallery-image">
                   <a href="">
-                    <img class="project-img-src" src="400x320.png" />
+                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
@@ -240,7 +232,7 @@
               <div class="gallery-content">
                 <div class="gallery-image">
                   <a href="">
-                    <img class="project-img-src" src="400x320.png" />
+                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
@@ -259,7 +251,7 @@
               <div class="gallery-content">
                 <div class="gallery-image">
                   <a href="">
-                    <img class="project-img-src" src="400x320.png" />
+                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
@@ -278,7 +270,7 @@
               <div class="gallery-content">
                 <div class="gallery-image">
                   <a href="">
-                    <img class="project-img-src" src="400x320.png" />
+                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
@@ -297,7 +289,7 @@
               <div class="gallery-content">
                 <div class="gallery-image">
                   <a href="">
-                    <img class="project-img-src" src="400x320.png" />
+                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
@@ -316,7 +308,7 @@
               <div class="gallery-content">
                 <div class="gallery-image">
                   <a href="">
-                    <img class="project-img-src" src="400x320.png" />
+                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
@@ -335,7 +327,7 @@
               <div class="gallery-content">
                 <div class="gallery-image">
                   <a href="">
-                    <img class="project-img-src" src="400x320.png" />
+                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
@@ -379,5 +371,11 @@
   </div>
 </footer>
 </body>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url_for('static', path='js/main-template.js') }}"></script>
+<!-- Core theme JS-->
+<script src="{{ url_for('static', path='js/scripts.js') }}"></script>
 
 </html>

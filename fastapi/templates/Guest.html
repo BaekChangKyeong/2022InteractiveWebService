@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>2022 KYU B:LOCK</title>
+
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="{{ url_for('static', path='/css/styles.css') }}" rel="stylesheet" />
+  <link href="{{ url_for('static', path='/css/main-template.css') }}" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!-- Responsive navbar-->
+  <nav class="navbar navbar-expand-lg navbar-black bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="about">B:LOCK</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <a class="menu-trigger" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="projtect">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="designer">Designer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="guest">Guest Book</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="container">
+    <h2 style="margin-top: 120px;">GUEST</h2>
+    <div class="comment_container">
+      <tr>
+        <td><input type="text" name="name" style="width: 188px; height: 50px;" class="guest_name"></td>
+      </tr>
+      <br>
+      <tr>
+        <td colspan=4>
+          <textarea placeholder="   당신의 글을 남겨주세요" name="content" style="height: 180px;" class="guest_comments"></textarea>
+        </td>
+      </tr>
+      <br>
+      <tr>
+        <td colspan=4 align=right><input type="button" value="확인" style="width: 74px; height: 38px; margin-left: auto;"
+            onclick=get_list()></td>
+      </tr>
+    </div>
+
+    <div class="form-group" style="display: none ;">
+      <select class="form-control" name="state" id="maxRows">
+        <option value="5000">Show ALL Rows</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+        <option value="70">70</option>
+        <option value="100">100</option>
+      </select>
+    </div>
+    <h2>LIST</h2>
+    <table class="table table-striped table-class" id="table-id">
+
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Date</th>
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+      </tbody>
+
+    </table>
+
+    <!--		Start Pagination -->
+    <div class='pagination-container'>
+      <nav class='pagination-nav'>
+        <ul class="pagination">
+
+          <li data-page="prev">
+            <span>
+              < <span class="sr-only">(current)
+            </span></span>
+          </li>
+          <!--	Here the JS Function Will Add the Rows -->
+          <li data-page="next" id="prev">
+            <span> > <span class="sr-only">(current)</span></span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- End of Container -->
+
+
+
+  <!--  Developed By Yasser Mas -->
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url_for('static', path='js/main-template.js') }}"></script>
+<!-- Core theme JS-->
+<script src="{{ url_for('static', path='js/scripts.js') }}"></script>
+
+<!-- Pagination JS -->
+<script src="{{ url_for('static', path='js/pagination.js') }}"></script>
+<script src="{{ url_for('static', path='js/ajax.js') }}"></script>
+
+</html>

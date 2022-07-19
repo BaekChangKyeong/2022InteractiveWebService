@@ -8,6 +8,25 @@
 /* // REQUIRED STYLES
 // ========================================================== */
 
+/* main page movie style */
+
+.main-mov {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
+/* block logo img */
+.logo-img {
+  width: 8%;
+  height: 3%;
+}
+
 .ball {
   border-radius: 80%;
   height: 100px;
@@ -66,13 +85,13 @@ body {
 
 .posterbox {
   position: relative;
-  width: 80px;
-  top: 80px;
+  /* width: 80px;
+  top: 80px; */
   left: 100px;
   margin-top: -26px;
   /* padding-bottom: 20%; */
-  background-color: aliceblue;
-  color: aliceblue;
+  /* background-color: aliceblue;
+  color: aliceblue; */
 }
 
 .posterbox:before {
@@ -111,21 +130,17 @@ ul {
   z-index: 1;
 }
 
-
-
-
-table th , table td{
+table th,
+table td {
   text-align: center;
 }
 
-.pagination li:hover{
+.pagination li:hover {
   cursor: pointer;
 }
-  table tbody tr {
-    display: none;
-  }
-
-
+table tbody tr {
+  display: none;
+}
 
 /* .project-img-src {
   margin: 0;
@@ -143,7 +158,6 @@ table th , table td{
   transition-delay: 0s;
   vertical-align: middle;
 } */
-
 
 /* type-01 */
 /* 중앙 라인이 고정된 자리에서 투명하게 사라지며 상하라인 회전하며 엑스자 만들기 */
@@ -605,20 +619,25 @@ table th , table td{
   }
 }
 
+/* 댓글창 */
+.comment_container {
+  display: flex;
+  flex-direction: column;
+}
 
 /* 페이징 적용 */
 
-.pagination-nav{
+.pagination-nav {
   display: flex;
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
-.pagination>li {
-  display: inline
+.pagination > li {
+  display: inline;
 }
 
-.pagination>li>a,
-.pagination>li>span {
+.pagination > li > a,
+.pagination > li > span {
   position: relative;
   float: left;
   padding: 6px 12px;
@@ -627,93 +646,93 @@ table th , table td{
   color: #337ab7;
   text-decoration: none;
   background-color: #fff;
-  border: 1px solid #ddd
+  border: 1px solid #ddd;
 }
 
-.pagination>li>a:focus,
-.pagination>li>a:hover,
-.pagination>li>span:focus,
-.pagination>li>span:hover {
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
   z-index: 2;
   color: #23527c;
   background-color: #eee;
-  border-color: #ddd
+  border-color: #ddd;
 }
 
-.pagination>li:first-child>a,
-.pagination>li:first-child>span {
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
   margin-left: 0;
   border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px
+  border-bottom-left-radius: 4px;
 }
 
-.pagination>li:last-child>a,
-.pagination>li:last-child>span {
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
   border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px
+  border-bottom-right-radius: 4px;
 }
 
-.pagination>.active>a,
-.pagination>.active>a:focus,
-.pagination>.active>a:hover,
-.pagination>.active>span,
-.pagination>.active>span:focus,
-.pagination>.active>span:hover {
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
   z-index: 3;
   color: #fff;
   cursor: default;
   background-color: #337ab7;
-  border-color: #337ab7
+  border-color: #337ab7;
 }
 
-.pagination>.disabled>a,
-.pagination>.disabled>a:focus,
-.pagination>.disabled>a:hover,
-.pagination>.disabled>span,
-.pagination>.disabled>span:focus,
-.pagination>.disabled>span:hover {
+.pagination > .disabled > a,
+.pagination > .disabled > a:focus,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > span,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > span:hover {
   color: #777;
   cursor: not-allowed;
   background-color: #fff;
-  border-color: #ddd
+  border-color: #ddd;
 }
 
-.pagination-lg>li>a,
-.pagination-lg>li>span {
+.pagination-lg > li > a,
+.pagination-lg > li > span {
   padding: 10px 16px;
   font-size: 18px;
-  line-height: 1.3333333
+  line-height: 1.3333333;
 }
 
-.pagination-lg>li:first-child>a,
-.pagination-lg>li:first-child>span {
+.pagination-lg > li:first-child > a,
+.pagination-lg > li:first-child > span {
   border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px
+  border-bottom-left-radius: 6px;
 }
 
-.pagination-lg>li:last-child>a,
-.pagination-lg>li:last-child>span {
+.pagination-lg > li:last-child > a,
+.pagination-lg > li:last-child > span {
   border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px
+  border-bottom-right-radius: 6px;
 }
 
-.pagination-sm>li>a,
-.pagination-sm>li>span {
+.pagination-sm > li > a,
+.pagination-sm > li > span {
   padding: 5px 10px;
   font-size: 12px;
-  line-height: 1.5
+  line-height: 1.5;
 }
 
-.pagination-sm>li:first-child>a,
-.pagination-sm>li:first-child>span {
+.pagination-sm > li:first-child > a,
+.pagination-sm > li:first-child > span {
   border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px
+  border-bottom-left-radius: 3px;
 }
 
-.pagination-sm>li:last-child>a,
-.pagination-sm>li:last-child>span {
+.pagination-sm > li:last-child > a,
+.pagination-sm > li:last-child > span {
   border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px
+  border-bottom-right-radius: 3px;
 }
 
 .sr-only {
@@ -724,7 +743,7 @@ table th , table td{
   margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  border: 0
+  border: 0;
 }
 
 .sr-only-focusable:active,
@@ -734,5 +753,5 @@ table th , table td{
   height: auto;
   margin: 0;
   overflow: visible;
-  clip: auto
+  clip: auto;
 }
