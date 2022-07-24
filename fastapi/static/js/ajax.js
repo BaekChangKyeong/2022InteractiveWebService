@@ -19,7 +19,7 @@ function update_list() {
             $.each(response, function (i, row) {
                 i = i + 1
                 element = 
-                    "<tr style='display: table-row;'>" + "<td>" + i + "</td>" +
+                    "<tr style='display: table-row;'>" + 
                     "<td>" + row.designer + "</td>" +
                     "<td>" + row.content + "</td>" +
                     "<td>" + row.id + "</td>" +
@@ -36,6 +36,7 @@ function update_list() {
 }
 
 // TODO "댓글창 초기화, 아무것도 없을때 댓글안달리게"
+// TODO "flag 처리 (안보임처리 해야함)"
 
 function get_list() {
     console.log("get_list")
@@ -55,5 +56,5 @@ function get_list() {
             "Content-Type": "application/json",
         },
         body: insert_db_data,
-    }).then(update_list());
+    }).then(location.reload());
 }
