@@ -20,23 +20,33 @@ def home(request: Request):
 
 # get designer page
 @app.get(path="/designer")
-def home(request: Request):
+def designer(request: Request):
     return templates.TemplateResponse("Designer.html", {"request":request})
+
+@app.get(path="/designer/{designer}")
+def designer(request: Request, designer):
+    designer = "designer/" + designer
+    return templates.TemplateResponse(designer, {"request":request})
 
 # get guest page
 @app.get(path="/guest")
-def home(request: Request):
+def guest(request: Request):
     return templates.TemplateResponse("Guest.html", {"request":request})
 
 # get about page
 @app.get(path="/about")
-def home(request: Request):
+def about(request: Request):
     return templates.TemplateResponse("About.html", {"request":request})
 
 # get project page
 @app.get(path="/project")
-def home(request: Request):
+def project(request: Request):
     return templates.TemplateResponse("Project.html", {"request":request})
+
+@app.get(path="/projects/{project}")
+def project(request: Request, project):
+    project = "projects/" + project
+    return templates.TemplateResponse(project, {"request":request})
 
 # example
 @app.get(path="/guestbook/{id}")
