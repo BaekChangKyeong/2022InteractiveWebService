@@ -8,6 +8,10 @@
 /* // REQUIRED STYLES
 // ========================================================== */
 
+.project-wrapper {
+  width: 100%;
+}
+
 /* main page movie style */
 
 .main-mov {
@@ -141,7 +145,6 @@ table td {
 table tbody tr {
   display: none;
 }
-
 
 /* type-01 */
 /* 중앙 라인이 고정된 자리에서 투명하게 사라지며 상하라인 회전하며 엑스자 만들기 */
