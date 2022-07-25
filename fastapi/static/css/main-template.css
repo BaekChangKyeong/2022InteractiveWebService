@@ -142,22 +142,6 @@ table tbody tr {
   display: none;
 }
 
-/* .project-img-src {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  width: 500px;
-  height: 350px;
-  height: auto;
-  filter: grayscale(0);
-  transition: filter 0.5s;
-  transition-property: filter;
-  transition-duration: 0.5s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
-  vertical-align: middle;
-} */
 
 /* type-01 */
 /* 중앙 라인이 고정된 자리에서 투명하게 사라지며 상하라인 회전하며 엑스자 만들기 */
@@ -452,7 +436,7 @@ table tbody tr {
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  width: 100%;
+  width: 500px;
   max-width: 100%;
   height: auto;
   /* filter: grayscale(0);
