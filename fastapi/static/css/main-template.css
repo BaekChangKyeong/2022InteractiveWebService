@@ -13,16 +13,35 @@
 }
 
 /* main page movie style */
+.main-wrapper-out {
+  position: relative;
+  width: 100%;
+  min-width: 280px;
+  overflow-x: hidden;
+  background: #fff;
+}
+
+.main-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-wrapper-in {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+}
 
 .main-mov {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
   height: auto;
-  z-index: -100;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  /* vertical-align: middle; */
 }
 
 /* block logo img */
@@ -78,6 +97,8 @@ body {
 .middle {
   /* 이하 필수 설정 */
   position: absolute;
+  width: 36%;
+  height: 16%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -118,7 +139,7 @@ body {
 
 .background_image {
   width: 100%;
-  height: 100%;
+  height: auto;
   border: 0;
   padding: 0;
   background-position: center;
@@ -126,7 +147,7 @@ body {
   background-color: #ffffff;
   opacity: 0.5;
   /* z-index: 1; */
-  position: absolute;
+  position: relative;
 }
 
 ul {
@@ -302,7 +323,7 @@ table tbody tr {
 #wrapper_about {
   height: 100%;
   width: 100%;
-  /* max-width: 100vw; */
+  max-width: 100vw;
 }
 
 #container-out {
@@ -431,6 +452,22 @@ table tbody tr {
   flex-direction: column;
 }
 
+.designer-img-src {
+  width: 324px;
+  height: 422px;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  filter: grayscale(1) brightness(110%);
+  transition: filter 0.5s;
+  transition-property: filter;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  vertical-align: middle;
+}
+
+
 .project-img-src {
   /* transform: rotate(90deg); */
   margin: 0;
@@ -467,7 +504,7 @@ table tbody tr {
   vertical-align: middle;
 }
 
-.img-src:hover {
+.designer-img-src:hover {
   filter: grayscale(0);
   transition: filter 0.5s;
   transition-property: filter;

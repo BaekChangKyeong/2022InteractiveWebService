@@ -73,11 +73,25 @@
       </div>
     </nav>
     <div id="wrapper_about">
-      <div>
-        <img
+      <div class="background_image">
+        <!-- <img
           class="background_image"
-          src="{{ url_for('static', path='/assets/about_img/wallpaper.jpg') }}"
-        />
+          src="{{ url_for('static', path='/assets/about_img/.jpg') }}"
+        /> -->
+        <video
+          playsinline
+          poster
+          autoplay
+          muted
+          loop
+          preload="auto"
+          width="100%"
+        >
+          <source
+            src="{{ url_for('static', path='/assets/about_img/inside-motion.mp4') }}"
+            type="video/mp4"
+          />
+        </video>
         <p>B:lock</p>
         <ul>
           [블럭]
@@ -98,6 +112,7 @@
         </ul>
       </div>
     </div>
+
     <!-- 저작권 영역 -->
     <footer class="footer" style="height: 180px">
       <div style="float: left">
