@@ -452,6 +452,22 @@ table tbody tr {
   flex-direction: column;
 }
 
+.designer-img-src {
+  width: 324px;
+  height: 422px;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  filter: grayscale(1) brightness(110%);
+  transition: filter 0.5s;
+  transition-property: filter;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  vertical-align: middle;
+}
+
+
 .project-img-src {
   /* transform: rotate(90deg); */
   margin: 0;
@@ -488,7 +504,7 @@ table tbody tr {
   vertical-align: middle;
 }
 
-.img-src:hover {
+.designer-img-src:hover {
   filter: grayscale(0);
   transition: filter 0.5s;
   transition-property: filter;

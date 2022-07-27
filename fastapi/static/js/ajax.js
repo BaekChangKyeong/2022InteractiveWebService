@@ -18,12 +18,16 @@ function update_list() {
             $('#table-id > tbody').empty()
             $.each(response, function (i, row) {
                 i = i + 1
+                var date = []
+                date = row.wdate.split('T')
+                time_date = date[0]
+                time_time = date[1].slice(0,5);
                 element = 
                     "<tr style='display: table-row;'>" + 
                     "<td>" + row.designer + "</td>" +
                     "<td>" + row.content + "</td>" +
                     "<td>" + row.id + "</td>" +
-                    "<td>" + row.wdate + "</td></tr>";
+                    "<td>" + time_date + "   " + time_time + "</td></tr>";
                 $('#table-id > tbody').append(element);
             })
             getPagination('#table-id');
