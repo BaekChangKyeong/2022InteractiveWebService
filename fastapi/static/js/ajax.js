@@ -26,7 +26,6 @@ function update_list() {
                     "<tr style='display: table-row;'>" + 
                     "<td>" + row.designer + "</td>" +
                     "<td>" + row.content + "</td>" +
-                    "<td>" + row.id + "</td>" +
                     "<td>" + time_date + "   " + time_time + "</td></tr>";
                 $('#table-id > tbody').append(element);
             })
