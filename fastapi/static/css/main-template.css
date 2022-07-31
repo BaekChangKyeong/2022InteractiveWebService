@@ -8,6 +8,10 @@
 /* // REQUIRED STYLES
 // ========================================================== */
 
+.footer_word {
+  color: #ed731d;
+}
+
 .scroll_down {
   position: absolute;
   bottom: 26px;
@@ -250,7 +254,7 @@ table tbody tr {
   transform: translateY(-100%);
   z-index: 1;
   background-color: white;
-  color: white;
+  color: #ed731d;
 }
 
 /* Designer Personal style */
