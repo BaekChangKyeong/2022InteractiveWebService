@@ -30,7 +30,7 @@
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-black bg-white">
       <div class="container">
-        <a class="navbar-brand" href="../About.html">B:LOCK</a>
+        <a class="navbar-brand" href="/about">B:LOCK</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -54,58 +54,69 @@
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="../Project.html"
+                href="/project"
                 >Projects</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../Designer.html">Designer</a>
+              <a class="nav-link" href="/designer">Designer</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../Guest.html">Guest Book</a>
+              <a class="nav-link" href="/guest">Guest Book</a>
             </li>
-            <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li> -->
           </ul>
         </div>
       </div>
     </nav>
 
-    <body>
+    <body>  
       <div id="wrapper">
         <div id="container_out">
-          <article id="board_view">
-            <section id="board_main">
+          <div id="container-in">
+            <article id="board_view">
+              <div>PROFILE</div>
+              <section id="board_main">
+                <!-- <div id="board_profile"> -->
+                  
+                  <div id="board_content">
+                    <div id="board_title">
+                      <h2>김건우</h2>
+                    </div>
+                    <div>
+                      <a href="mailto:rla081089@gmail.com">rla081089@gmail.com</a>
+                    </div>
+                    <div>
+                      <a href="">portfolio</a>
+                    </div>
+                    <div id="board_title">
+                      <h2>Introduce</h2>
+                    </div>
+                    <div id="board_introduce">
+                      <h2>안녕하세요 저는 건양대학교 융합디자인학과에서 4년간 디자인 역량 쌓은 제품 디자이너 김건우입니다! 사소하더라도 더 나은 삶을 위해 항상 도전하고 고민하는 디자이너가 되고 싶습니다!</h2>
+                    </div>
+                  </div>
+                  <div id="board_img">
+                    <img
+                      src="{{ url_for('static', path='../static/assets/designer-profile/Kim_Gunwoo.png') }}"
+                    />
+                  </div>
+                  
+                <!-- </div> -->
+              </section>
               <div id="board_profile">
-                <div>
-                  <div id="board_title">
-                    <h2>김건우</h2>
-                  </div>
-                  <div>
-                    <a href="mailto:rla081089@gmail.com">rla081089@gmail.com</a>
-                  </div>
-                  <div>
-                    <a href="">portfolio</a>
-                  </div>
-                  <div id="board_title">
-                    <h2>POINT</h2>
-                  </div>
-                </div>
-                <div id="board_img">
-                  <img
-                    src="{{ url_for('static', path='assets/designer-profile/profile.png') }}"
-                  />
-                </div>
+                <h2>비록 나이 먹고 수염이 자란 아저씨가 됐지만 사회로 나아갈 수 있는 자신감이 생겼다..!</h2>
               </div>
-            </section>
-          </article>
+
+              <div>
+                <h3>2. 대학생활 중 기억에 남는 일 한 가지는?</h3>
+              </div>
+              <div>
+                <h3>산업 과제 때문에 2~3일을 학과 프로젝트실에서 밤을 새우고 자취방 침대에 누웠던 순간이 기억에 남습니다. 몸을 고됐지만 정말 뿌듯했던 순간이었어요</h3>
+              </div>
+            </article>
+
+          </div>
+          
         </div>
       </div>
     </body>

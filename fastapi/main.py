@@ -23,10 +23,10 @@ def home(request: Request):
 def designer(request: Request):
     return templates.TemplateResponse("Designer.html", {"request":request})
 
-# get designer page
-@app.get(path="/designer/kimgunwoo")
-def designer(request: Request):
-    return templates.TemplateResponse("/designer/kimgunwoo.html", {"request":request})
+# # get designer page
+# @app.get(path="/designer/kimgunwoo")
+# def designer(request: Request):
+#     return templates.TemplateResponse("/designer/kimgunwoo.html", {"request":request})
 
 @app.get(path="/designer/{designer}")
 def designer(request: Request, designer):
