@@ -34,8 +34,10 @@
 /* main page movie style */
 .main-wrapper-out {
   position: relative;
+  /* padding-left: 3%; */
   width: 100%;
   min-width: 280px;
+  height: 100%;
   overflow-x: hidden;
   background: #fff;
 }
@@ -46,6 +48,8 @@
   min-height: 100vh;
   position: relative;
   overflow: hidden;
+  text-align: center;
+  align-content: center;
 }
 
 .main-wrapper-in {
