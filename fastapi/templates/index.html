@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" style="overflow: hidden">
+<html lang="en" > 
+  <!-- style="overflow: hidden" -->
   <head>
     <meta charset="utf-8" />
     <meta
@@ -35,30 +36,27 @@
         <div
           class="middle"
           onclick="location.href='about'"
-          style="cursor: pointer"
+          style="cursor: pointer;"
         >
           <!-- <div>
             <a href="about"></a>
           </div> -->
         </div>
 
-        <div class="main-wrapper-out">
-          <div class="main-wrapper">
-            <div class="main-wrapper-in">
-              <video
-                playsinline
-                poster
-                autoplay
-                muted
-                preload="auto"
-                width="100%"
-              >
-                <source
-                  src="{{ url_for('static', path='/assets/main-mov/main-motion.mp4') }}"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
+        <div id="visual">
+          <div class="visual_in">
+            <video
+              playsinline
+              poster
+              autoplay
+              muted
+              preload="auto"
+            >
+              <source
+                src="{{ url_for('static', path='/assets/main-mov/main-motion.mp4') }}"
+                type="video/mp4"
+              />
+            </video>
           </div>
         </div>
         <!-- 반짝반짝 작은별~ -->
