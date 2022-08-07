@@ -73,7 +73,7 @@
       </div>
     </nav>
     <div id="wrapper_about">
-      <div class="background_image" style="z-index: 999;">
+      <div class="background_image">
         <!-- <img
           class="background_image"
           src="{{ url_for('static', path='/assets/about_img/.jpg') }}"
@@ -99,7 +99,7 @@
           <br>
           <br>
           <br>
-          <ul>
+          <ul class="about_word_block">
             [블럭]
             <br>
             <br>
@@ -110,7 +110,7 @@
             <br>
             <br>
           </ul>
-          <ul>
+          <ul class="about_word_block">
             [비록]
             <br>
             <br>
@@ -125,19 +125,20 @@
       </div>
     </div>
     <!-- 저작권 영역 -->
-    <footer class="footer" style="height: 180px">
-      <div style="float: left">
+    <footer class="footer">
+      <!-- <div style="float: left"> -->
         <img
           class="posterbox"
           src="{{ url_for('static', path='/assets/posterbox/poster.svg') }}"
           alt=""
         />
-        <div class="footer_word" style="position: fixed; left: 200px; color: #ed731d;">
+        <div class="footer_word">
           <span>Konyang University</span><br>
-          <span>Interdisciplinary Design</span><br />
-          <span>2022 6th Graudation Exhibition</span>
+          <span>2022 6th Graudation Exhibition</span><br />
+          <span>Interdisciplinary Design</span>
         </div>
-      </div>
+
+      <!-- </div> -->
       <div style="position: fixed; bottom: 50px; right: 100px">
         <a href="#"> TOP </a>
       </div>
