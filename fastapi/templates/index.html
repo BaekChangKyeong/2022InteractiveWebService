@@ -43,22 +43,23 @@
           </div> -->
         </div>
 
-        <div id="visual">
-          <div class="visual_in">
-            <video
-              playsinline
-              poster
-              autoplay
-              muted
-              preload="auto"
-            >
-              <source
-                src="{{ url_for('static', path='/assets/main-mov/main-motion.mp4') }}"
-                type="video/mp4"
-              />
-            </video>
-          </div>
+        <div class="main-video">
+          <video
+            playsinline
+            poster
+            autoplay
+            muted
+            preload="auto"
+            width="100%"
+          >
+          <!-- height="920px" -->
+            <source
+              src="{{ url_for('static', path='/assets/main-mov/main-motion.mp4') }}"
+              type="video/mp4"
+            />
+          </video>
         </div>
+
         <!-- 반짝반짝 작은별~ -->
         <!-- <div class="fade-in-box">
           <p>공 밀기</p>

@@ -30,7 +30,12 @@
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-black bg-white">
       <div class="container">
-        <a class="navbar-brand" href="../About.html">B:LOCK</a>
+        <a class="navbar-brand" href="/index"> </a>
+        <img
+          class="logo-img"
+          src="{{ url_for('static', path='/assets/logo/logo.svg') }}"
+          alt=""
+        />
         <button
           class="navbar-toggler"
           type="button"
@@ -45,28 +50,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="../Project.html"
+              <a class="nav-link active" aria-current="page" href="/project"
                 >Projects</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../Designer.html">Designer</a>
+              <a class="nav-link" href="/designer">Designer</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../Guest.html">Guest Book</a>
+              <a class="nav-link" href="/guest">Guest Book</a>
             </li>
-            <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li> -->
           </ul>
         </div>
       </div>
@@ -112,23 +105,17 @@
     <!-- 저작권 영역 -->
     <footer class="footer" style="height: 180px">
       <div style="float: left">
-        <div class="posterbox">
-          <div class="content"></div>
-        </div>
-        <div style="position: fixed; left: 200px">
+        <img
+          class="posterbox"
+          src="{{ url_for('static', path='/assets/posterbox/poster.svg') }}"
+          alt=""
+        />
+        <div class="footer_word" style="position: fixed; left: 200px; color: #ed731d;">
           <span>Konyang University</span><br />
           <span>Interdisciplinary Design</span><br />
           <span>2022 6th Graudation Exhibition</span>
         </div>
       </div>
-      <!-- </div> -->
-      <!-- <div style="position: inherit; left: 300px">
-      <span>Konyang University</span><br />
-      <br />
-      <span>2022 6th Graudation Exhibition</span><br />
-      <span>Interdisciplinary Design</span><br />
-      <span>class of 2014, 2015, 2019 All Right Reserved.</span>
-    </div> -->
       <div style="position: fixed; bottom: 50px; right: 100px">
         <a href="#"> TOP </a>
       </div>
