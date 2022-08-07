@@ -32,12 +32,12 @@
 }
 
 /* main page movie style */
-.main-wrapper-out {
+/* .main-wrapper-out {
   position: relative;
-  /* padding-left: 3%; */
-  width: 100%;
+  padding-left: 3%;
+  max-width: 1440px;
   min-width: 280px;
-  height: 100%;
+  height: auto;
   overflow-x: hidden;
   background: #fff;
 }
@@ -52,6 +52,7 @@
   align-content: center;
 }
 
+
 .main-wrapper-in {
   width: 100%;
   height: 100%;
@@ -60,12 +61,11 @@
 }
 
 .main-mov {
-  height: auto;
-  width: 100%;
   position: relative;
-  overflow: hidden;
-  /* vertical-align: middle; */
-}
+  padding-bottom: 56.25%;
+  width: 100%;
+  height: 0;
+} */
 
 /* block logo img */
 .logo-img {
@@ -101,6 +101,7 @@ section {
 html,
 body {
   height: 100%;
+  background-color: #e7e6e5;
   /* margin-left: 100px;
   margin-right: 100px; */
   /* margin: 0;
@@ -119,6 +120,27 @@ body {
   z-index: 1;
   /* color: black; */
   background: false;
+}
+
+/* .main-video {
+  background-color: #E7E6E5;
+} */
+
+@media screen and (max-width: 768px) {
+  .main-video {
+    padding-top: 60%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  .main-video {
+    padding-top: 3.5%;
+    text-align: center;
+  }
+  /* body {
+    background-color: #E7E6E5;
+  } */
 }
 
 .posterbox {
@@ -572,11 +594,11 @@ table tbody tr {
 
 @media only screen and (min-width: 768px) and (max-width: 1550px) {
   #wrapper #container-out {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .visible {
-    max-width: 42%;
+    max-width: 40%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
