@@ -50,8 +50,7 @@ def project(request: Request):
 
 @app.get(path="/projects/{project}")
 def project(request: Request, project):
-    project = "projects/" + project
-    return templates.TemplateResponse(project, {"request":request})
+    return templates.TemplateResponse("projects/project_detail.html", {"request":request,"project":project})
 
 # example
 @app.get(path="/guestbook/{id}")

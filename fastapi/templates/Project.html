@@ -17,9 +17,21 @@
   <!-- Responsive navbar-->
   <nav class="navbar navbar-expand-lg navbar-black bg-white">
     <div class="container">
-      <a class="navbar-brand" href="about">B:LOCK</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index"> </a>
+      <img
+        class="logo-img"
+        src="{{ url_for('static', path='/assets/logo/logo.svg') }}"
+        alt=""
+      />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon">
           <a class="menu-trigger" href="#">
             <span></span>
@@ -39,15 +51,6 @@
           <li class="nav-item">
             <a class="nav-link" href="guest">Guest Book</a>
           </li>
-          <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li> -->
         </ul>
       </div>
     </div>
@@ -60,15 +63,15 @@
             <div class="gallery-grid">
               <div class="gallery-content">
                 <div class="gallery-image">
-                  <a href="projects/kimgunwoo.html">
-                    <img class="project-img-src" src="../static/assets/projects/seokmin.png" />
+                  <a href="projects/gunwoo">
+                    <img class="project-img-src" src="../static/assets/projects/gunwoo.jpeg" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
                   <a>
                     Pocko
                   </a>
-                  <a href="projects/kimgunwoo.html">
+                  <a href="projects/gunwoo">
                     김건우
                   </a>
                 </div>
@@ -79,7 +82,7 @@
             <div class="gallery-grid">
               <div class="gallery-content">
                 <div class="gallery-image">
-                  <a href="">
+                  <a href="projects/yejin">
                     <img class="project-img-src" src="../static/assets/projects/yejin.png" />
                   </a>
                 </div>
@@ -87,7 +90,7 @@
                   <a>
                     Pocko
                   </a>
-                  <a>
+                  <a href="projects/yejin">
                     남예진
                   </a>
                 </div>
@@ -98,15 +101,15 @@
             <div class="gallery-grid">
               <div class="gallery-content">
                 <div class="gallery-image">
-                  <a href="">
-                    <img class="project-img-src" src="../static/assets/projects/youngjae.png" />
+                  <a href="projects/seokmin">
+                    <img class="project-img-src" src="../static/assets/projects/seokmin.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
                   <a>
                     Pocko
                   </a>
-                  <a>
+                  <a href="projects/seokmin">
                     서석민
                   </a>
                 </div>
@@ -117,15 +120,15 @@
             <div class="gallery-grid">
               <div class="gallery-content">
                 <div class="gallery-image">
-                  <a href="">
-                    <img class="project-img-src" src="../static/assets/projects/yujeing.jpeg" />
+                  <a href="projects/youngjae">
+                    <img class="project-img-src" src="../static/assets/projects/youngjae.jpg" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
                   <a>
                     Pocko
                   </a>
-                  <a>
+                  <a href="projects/youngjae">
                     손영재
                   </a>
                 </div>
@@ -136,15 +139,15 @@
             <div class="gallery-grid">
               <div class="gallery-content">
                 <div class="gallery-image">
-                  <a href="">
-                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
+                  <a href="projects/jeongwoo">
+                    <img class="project-img-src" src="../static/assets/projects/jeongwoo.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
                   <a>
                     Pocko
                   </a>
-                  <a>
+                  <a href="projects/jeongwoo">
                     엄정우
                   </a>
                 </div>
@@ -155,15 +158,15 @@
             <div class="gallery-grid">
               <div class="gallery-content">
                 <div class="gallery-image">
-                  <a href="">
-                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
+                  <a href="projects/hyeonji">
+                    <img class="project-img-src" src="../static/assets/projects/hyeonji.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
                   <a>
                     Pocko
                   </a>
-                  <a>
+                  <a href="projects/hyeonji">
                     이현지
                   </a>
                 </div>
@@ -174,15 +177,15 @@
             <div class="gallery-grid">
               <div class="gallery-content">
                 <div class="gallery-image">
-                  <a href="">
-                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
+                  <a href="projects/seokyong">
+                    <img class="project-img-src" src="../static/assets/projects/seokyong.jpeg" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
                   <a>
                     Pocko
                   </a>
-                  <a>
+                  <a href="projects/seokyong">
                     장석용
                   </a>
                 </div>
@@ -193,15 +196,15 @@
             <div class="gallery-grid">
               <div class="gallery-content">
                 <div class="gallery-image">
-                  <a href="">
-                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
+                  <a href="projects/shinwook">
+                    <img class="project-img-src" src="../static/assets/projects/shinwook.jpeg" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
                   <a>
                     Pocko
                   </a>
-                  <a>
+                  <a href="projects/shinwook">
                     강신욱
                   </a>
                 </div>
@@ -212,15 +215,15 @@
             <div class="gallery-grid">
               <div class="gallery-content">
                 <div class="gallery-image">
-                  <a href="">
-                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
+                  <a href="projects/jeongung">
+                    <img class="project-img-src" src="../static/assets/projects/jeongung.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
                   <a>
                     Pocko
                   </a>
-                  <a>
+                  <a href="projects/jeongung">
                     서정웅
                   </a>
                 </div>
@@ -231,15 +234,15 @@
             <div class="gallery-grid">
               <div class="gallery-content">
                 <div class="gallery-image">
-                  <a href="">
-                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
+                  <a href="projects/yeeun">
+                    <img class="project-img-src" src="../static/assets/projects/yeeun.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
                   <a>
                     Pocko
                   </a>
-                  <a>
+                  <a href="projects/yeeun">
                     김예은
                   </a>
                 </div>
@@ -250,15 +253,15 @@
             <div class="gallery-grid">
               <div class="gallery-content">
                 <div class="gallery-image">
-                  <a href="">
-                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
+                  <a href="projects/yujeong">
+                    <img class="project-img-src" src="../static/assets/projects/yujeong.jpeg" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
                   <a>
                     Pocko
                   </a>
-                  <a>
+                  <a href="projects/yujeong">
                     김유정
                   </a>
                 </div>
@@ -269,15 +272,15 @@
             <div class="gallery-grid">
               <div class="gallery-content">
                 <div class="gallery-image">
-                  <a href="">
-                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
+                  <a href="projects/soojeong">
+                    <img class="project-img-src" src="../static/assets/projects/soojeong.jpeg" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
                   <a>
                     Pocko
                   </a>
-                  <a>
+                  <a href="projects/soojeong">
                     신수정
                   </a>
                 </div>
@@ -288,15 +291,15 @@
             <div class="gallery-grid">
               <div class="gallery-content">
                 <div class="gallery-image">
-                  <a href="">
-                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
+                  <a href="projects/jinseo">
+                    <img class="project-img-src" src="../static/assets/projects/jinseo.png" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
                   <a>
                     Pocko
                   </a>
-                  <a>
+                  <a href="projects/jinseo">
                     유진서
                   </a>
                 </div>
@@ -307,32 +310,16 @@
             <div class="gallery-grid">
               <div class="gallery-content">
                 <div class="gallery-image">
-                  <a href="">
-                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
+                  <a href="projects/youngwon">
+                    <img class="project-img-src" src="../static/assets/projects/youngwon.jpeg" />
                   </a>
                 </div>
                 <div class="gallery-project-text">
                   <a>
                     Pocko
                   </a>
-                  <a>
+                  <a href="projects/youngwon">
                     조영원
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li style class="visible">
-            <div class="gallery-grid">
-              <div class="gallery-content">
-                <div class="gallery-image">
-                  <a href="">
-                    <img class="project-img-src" src="/../../../static/assets/projects/400x320.png" />
-                  </a>
-                </div>
-                <div class="gallery-project-text">
-                  <a>
-                    개발자
                   </a>
                 </div>
               </div>
