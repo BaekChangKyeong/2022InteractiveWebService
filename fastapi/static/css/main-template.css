@@ -8,11 +8,7 @@
 /* // REQUIRED STYLES
 // ========================================================== */
 
-.footer_word {
-  color: #ed731d;
-  position: fixed; 
-  left: 200px;
-}
+
 
 .scroll_down {
   position: absolute;
@@ -22,28 +18,69 @@
 }
 
 .about_word {
+  list-style: none;
   position: absolute;
   width: 100%;
   top: 65%;
   margin-left: 7%;
+  padding-bottom: 9%;
   /* opacity: 0.5; */
 }
 
+.about_word_logo {
+  width: 9%;
+  height: 3%;
+  padding-top: 12.5%;
+  padding-bottom: 8%
+}
+
+.about_word_block_header {
+  font-weight: bold;
+  font-size: 22pt;
+  padding-bottom: 2.5%;
+  padding-left: 0;
+}
+
+.about_word_block_content {
+  font-size: 22pt;
+  padding-bottom: 5%;
+  width: 54%;
+}
+
 @media screen and (max-width: 768px) {
+  .about_word_logo {
+    width: 30%;
+    height: 25%;
+    padding-top: 12.5%;
+    padding-bottom: 8%
+  }
+
   .about_word{
-    width: 95%;
+    padding-top: 2%;
+    width: 80%;
     margin-left: 2%;
     top: 100%;
-    font-size: 1%;
+    /* font-size: 14pt; */
     position: inherit;
     z-index: 1;
-    padding-bottom: 322px;
+    padding-bottom: 6%;
     /* background-color: #e7e6e5; */
   }
 
-  .about_word_block {
+  .about_word_block_header {
     list-style: none;
     padding: 0;
+    padding-top: 28px;
+    font-size: 14pt;
+  }
+
+  .about_word_block_content {
+    list-style: none;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    font-size: 8.5pt;
+    width: 95%;
   }
 }
 
@@ -139,9 +176,9 @@ body {
   /* 이하 필수 설정 */
   position: absolute;
   width: 36%;
-  height: 16%;
+  height: 20%;
   left: 50%;
-  top: 50%;
+  top: 58%;
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 1;
@@ -268,9 +305,10 @@ table tbody tr {
 /* footer 부분 */
 .posterbox {
   position: relative;
-  width: 80px;
-  top: 80px;
-  left: 100px;
+  padding-top: 3%;
+  width: 6%;
+  top: 6%;
+  left: 7%;
   /* padding-bottom: 20%; */
   background-color: white;
   color: white;
@@ -286,12 +324,23 @@ table tbody tr {
   width: 100%;
   height: 20%;
   margin-bottom: 0%;
+  top: 40%;
   position: relative;
   transform: translateY(-100%);
   z-index: 1;
   background-color: white;
   color: #ed731d;
 }
+
+.footer_word {
+  color: #ed731d;
+  padding-left: 16%;
+}
+
+/* .footer_word {
+  position: fixed; 
+  left: 200px;
+} */
 
 @media screen and (max-width: 768px) {
   .footer {
@@ -311,7 +360,7 @@ table tbody tr {
 
   .footer_word {
     left: 20%;
-    font-size: 0.1pt;
+    font-size: 0.1vh;
     margin-top: -13%
   }
 }
