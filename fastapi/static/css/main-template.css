@@ -22,6 +22,7 @@
   position: absolute;
   width: 100%;
   top: 54%;
+  padding-left: 11%;
   /* margin-left: 11%; */
   padding-bottom: 9%;
   /* opacity: 0.5; */
@@ -44,7 +45,7 @@
 .about_word_block_content {
   font-size: 22pt;
   padding-bottom: 4%;
-  width: 54%;
+  width: 71%;
   word-break: keep-all;
 }
 
