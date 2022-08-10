@@ -20,9 +20,9 @@
 .about_word {
   list-style: none;
   position: absolute;
-  width: 116%;
+  width: 100%;
   top: 54%;
-  margin-left: 11%;
+  /* margin-left: 11%; */
   padding-bottom: 9%;
   /* opacity: 0.5; */
 }
