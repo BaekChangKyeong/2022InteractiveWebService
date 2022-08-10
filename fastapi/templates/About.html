@@ -32,10 +32,12 @@
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-black bg-white">
       <div class="container">
-        <a class="navbar-brand" href="index"> </a>
+        <a class="navbar-brand"> </a>
         <img
           class="logo-img"
           src="{{ url_for('static', path='/assets/logo/logo.svg') }}"
+          onclick="location.href='/'" 
+          style="cursor:pointer" 
           alt=""
         />
         <button
@@ -105,7 +107,7 @@
             [블럭]
           </ul>
           <li class="about_word_block_content">
-            우리는 각자 열심히 쌓아온 결과물과 값진 과정을 바탕으로 단단한 블록을 쌓아왔습니다.
+            우리는 각자 열심히 쌓아온 결과물과 값진 과정을 바탕으로 단단한 블록을 쌓아왔습니다. 
             자신만의 모양으로 표현한 블럭. 이곳은 우리가 쌓아온 공간입니다.
           </li>
           <ul class="about_word_block_header">
