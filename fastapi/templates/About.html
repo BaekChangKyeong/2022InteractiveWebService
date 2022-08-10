@@ -32,10 +32,12 @@
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-black bg-white">
       <div class="container">
-        <a class="navbar-brand" href="index"> </a>
+        <a class="navbar-brand"> </a>
         <img
           class="logo-img"
           src="{{ url_for('static', path='/assets/logo/logo.svg') }}"
+          onclick="location.href='/'" 
+          style="cursor:pointer" 
           alt=""
         />
         <button
