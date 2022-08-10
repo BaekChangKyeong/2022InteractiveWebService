@@ -20,9 +20,9 @@
 .about_word {
   list-style: none;
   position: absolute;
-  width: 100%;
-  top: 65%;
-  margin-left: 7%;
+  width: 116%;
+  top: 54%;
+  margin-left: 11%;
   padding-bottom: 9%;
   /* opacity: 0.5; */
 }
@@ -37,21 +37,22 @@
 .about_word_block_header {
   font-weight: bold;
   font-size: 22pt;
-  padding-bottom: 2.5%;
+  padding-bottom: 2%;
   padding-left: 0;
 }
 
 .about_word_block_content {
   font-size: 22pt;
-  padding-bottom: 5%;
+  padding-bottom: 4%;
   width: 54%;
+  word-break: keep-all;
 }
 
 @media screen and (max-width: 768px) {
   .about_word_logo {
     width: 30%;
     height: 25%;
-    padding-top: 12.5%;
+    padding-top: 13.5%;
     padding-bottom: 8%
   }
 
@@ -80,7 +81,8 @@
     padding-top: 10px;
     padding-bottom: 12px;
     font-size: 8.5pt;
-    width: 95%;
+    width: 90%;
+    word-break: keep-all;
   }
 }
 
@@ -305,9 +307,8 @@ table tbody tr {
 /* footer 부분 */
 .posterbox {
   position: relative;
-  padding-top: 3%;
   width: 6%;
-  top: 6%;
+  top: 23%;
   left: 7%;
   /* padding-bottom: 20%; */
   background-color: white;
@@ -335,6 +336,8 @@ table tbody tr {
 .footer_word {
   color: #ed731d;
   padding-left: 16%;
+  position: fixed;
+  bottom: 15%;
 }
 
 /* .footer_word {
@@ -344,8 +347,8 @@ table tbody tr {
 
 @media screen and (max-width: 768px) {
   .footer {
-    position: absolute;
-    height: 10%;
+    /* position: absolute; */
+    height: 13%;
     z-index: 1;
     padding-bottom: 5%;
   }
@@ -353,15 +356,15 @@ table tbody tr {
   .posterbox {
     position: initial;
     left: 6.25%;
-    /* width: 20%; */
+    width: 20%;
     height: 85%;
-    margin-top: 5%
+    margin-top: 4%
     }
 
   .footer_word {
-    left: 20%;
-    font-size: 0.1vh;
-    margin-top: -13%
+    left: 3%;
+    font-size: 1vh;
+    top: 25%
   }
 }
 
@@ -447,7 +450,7 @@ table tbody tr {
   min-height: 100%;
   width: 100%;
   max-width: 100vw;
-  padding-bottom: 180px;
+  /* padding-bottom: 180px; */
 }
 
 #container-out {
