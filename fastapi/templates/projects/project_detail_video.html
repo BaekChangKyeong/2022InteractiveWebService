@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>2022 KYU B:LOCK</title>
+  <!-- Favicon-->
+  <link rel="icon" href="{{ url_for('static', path='/assets/posterbox/poster.svg') }}" type="image/x-icon"
+    sizes="32x32" />
+  <link href="{{ url_for('static', path='/css/styles.css') }}" rel="stylesheet" />
+  <link href="{{ url_for('static', path='/css/main-template.css') }}" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Responsive navbar-->
+  <nav class="navbar navbar-expand-lg navbar-black bg-white">
+    <div class="container">
+      <a class="navbar-brand"> </a>
+      <img class="logo-img" src="{{ url_for('static', path='/assets/logo/logo.svg') }}" onclick="location.href='/about'"
+        style="cursor:pointer" alt="" />
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <a class="menu-trigger" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/project">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/designer">Designer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/guest">Guest Book</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <body>
+    <!-- <div id="project-wrapper"> -->
+    <!-- src="{{ url_for('static', path='/assets/projects/{{project}}_project.jpg') }}" -->
+    <div class='embed-container'>
+      <iframe src="https://www.youtube.com/embed/pr_ZL0hmydQ"
+      title="Graduation Project-ME:DVENTURE" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    </div>
+    
+
+  </body>
+  <!-- 저작권 영역 -->
+  <footer class="footer">
+    <!-- <div style="float: left"> -->
+    <img class="posterbox" src="{{ url_for('static', path='/assets/posterbox/poster.svg') }}" alt="" />
+    <div class="footer_word">
+      <span>Konyang University</span><br><br>
+      <span>2022 6th Graudation Exhibition</span><br />
+      <span>Interdisciplinary Design</span>
+    </div>
+
+    <!-- </div> -->
+    <div style="position: fixed; bottom: 50px; right: 100px">
+      <a href="#"> TOP </a>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="{{ url_for('static', path='js/main-template.js') }}"></script>
+  <!-- Core theme JS-->
+  <script src="{{ url_for('static', path='js/scripts.js') }}"></script>
+</body>
+
+</html>

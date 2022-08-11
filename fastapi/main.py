@@ -52,6 +52,10 @@ def project(request: Request):
 def project(request: Request, project):
     return templates.TemplateResponse("projects/project_detail.html", {"request":request,"project":project})
 
+@app.get(path="/project/shinwook")
+def project(request: Request):
+    return templates.TemplateResponse("projects/project_detail_video.html", {"request":request})
+
 # example
 @app.get(path="/guestbook/{id}")
 def get_place(
