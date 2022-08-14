@@ -4319,6 +4319,7 @@ fieldset:disabled .btn {
   padding-bottom: 0.5rem;
   height: 15%;
 }
+
 .navbar > .container {
   display: flex;
   flex-wrap: inherit;
@@ -4328,6 +4329,17 @@ fieldset:disabled .btn {
 }
 
 @media screen and (max-width: 768px) {
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 10%;
+  }
+
   .navbar > .container {
     width: 100%;
     display: flex;
@@ -4335,6 +4347,7 @@ fieldset:disabled .btn {
     align-items: center;
     justify-content: space-between;
     column-gap: 0;
+    z-index: 1;
   }
   
 }
