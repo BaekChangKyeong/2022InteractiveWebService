@@ -23,11 +23,7 @@ def home(request: Request):
 def designer(request: Request):
     return templates.TemplateResponse("Designer.html", {"request":request})
 
-# # get designer page
-# @app.get(path="/designer/kimgunwoo")
-# def designer(request: Request):
-#     return templates.TemplateResponse("/designer/kimgunwoo.html", {"request":request})
-
+# get designer page
 @app.get(path="/designer/{designer}")
 def designer(request: Request, designer):
     designer = "designer/" + designer
@@ -55,6 +51,11 @@ def project(request: Request, project):
 @app.get(path="/project/shinwook")
 def project(request: Request):
     return templates.TemplateResponse("projects/project_detail_video.html", {"request":request})
+
+@app.get(path="/project/jeongung")
+def designer(request: Request):
+    return templates.TemplateResponse("projects/project_detail_video_seojeongung.html", {"request":request})
+
 
 # example
 @app.get(path="/guestbook/{id}")
