@@ -8,7 +8,32 @@
 /* // REQUIRED STYLES
 // ========================================================== */
 
+/* hamburger-menubar */
+.burger {
+  display: none;
+  cursor: pointer;
+}
 
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  margin: 5px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.line2 {
+  opacity: 0;
+}
+
+.line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
 
 .scroll_down {
   position: absolute;
@@ -147,8 +172,8 @@
 
 /* block logo img */
 .logo-img {
-  width: 8%;
-  height: 3%;
+  width: 10%;
+  height: 5%;
 }
 
 @media screen and (max-width: 768px) {
@@ -451,7 +476,7 @@ table tbody tr {
 
 /* Designer Page Style */
 #wrapper {
-  padding: 5% 10% 5% 10%;
+  padding: 5% 12% 5% 12%;
   width: 100%;
   /* max-width: 100vw; */
 }
@@ -473,8 +498,8 @@ table tbody tr {
 }
 
 #container-out {
-  padding-left: 5%;
-  padding-right: 5%;
+  /* padding-left: 5%;
+  padding-right: 5%; */
   width: 100%;
 }
 
@@ -495,10 +520,10 @@ table tbody tr {
   margin-top: 3em;
   gap: 0%;
   row-gap: 2%;
-  column-gap: 1%;
+  column-gap: 2%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 0px;
   width: 100%;
   padding: 0px;
@@ -549,7 +574,7 @@ table tbody tr {
   transition-duration: 1s;
   transition-timing-function: ease;
   transition-delay: 0s;
-  margin-bottom: 3%;
+  margin-bottom: 8%;
 }
 
 .gallery-grid {
@@ -571,16 +596,15 @@ table tbody tr {
 }
 
 .gallery-text {
-  margin: 1em;
+  margin-top: 20px;
   box-sizing: border-box;
   display: block;
   text-align: left;
   visibility: visible;
-  margin-bottom: 1em;
+  /* margin-bottom: 6%; */
   font-size: 20pt;
-  font-weight: 500;
+  font-weight: bold;
   word-break: keep-all;
-  color: #000000;
 }
 
 .gallery-project-text {
@@ -611,6 +635,41 @@ table tbody tr {
   transition-timing-function: ease;
   transition-delay: 0s;
   vertical-align: middle;
+}
+
+.designer-img-src:hover {
+  filter: grayscale(0);
+  transition: filter 0.5s;
+  transition-property: filter;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+@media screen and (max-width: 768px) {
+  .designer-img-src {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    filter: grayscale(1) brightness(110%);
+    transition: filter 0.5s;
+    transition-property: filter;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    vertical-align: middle;
+  }
+
+  .designer-img-src:hover {
+    filter: grayscale(0);
+    transition: filter 0.5s;
+    transition-property: filter;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
 }
 
 
@@ -648,15 +707,6 @@ table tbody tr {
   transition-timing-function: ease;
   transition-delay: 0s;
   vertical-align: middle;
-}
-
-.designer-img-src:hover {
-  filter: grayscale(0);
-  transition: filter 0.5s;
-  transition-property: filter;
-  transition-duration: 0.5s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
 }
 
 @media only screen and (max-width: 768px) {

@@ -26,6 +26,8 @@
       href="{{ url_for('static', path='/css/main-template.css') }}"
       rel="stylesheet"
     />
+    <!-- 프리텐다드 폰트 적용 -->
+    <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
   </head>
 
   <body>
@@ -60,15 +62,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="project"
-                >Projects</a
-              >
+              <a class="nav-link active" aria-current="page" href="project"> &nbsp;&nbsp;PROJECT&nbsp;&nbsp; </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="designer">Designer</a>
+              <a class="nav-link" href="designer"> &nbsp;&nbsp;DESIGNER&nbsp;&nbsp; </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="guest">Guest Book</a>
+              <a class="nav-link" href="guest"> &nbsp;&nbsp;GUESTBOOK&nbsp;&nbsp; </a>
             </li>
           </ul>
         </div>
@@ -91,7 +91,7 @@
           width="100%"
         >
           <source
-            src="{{ url_for('static', path='/assets/about_img/inside-motion.mp4') }}"
+            src="{{ url_for('static', path='/assets/about_img/inside_motion_19mb.mp4') }}"
             type="video/mp4"
           />
         </video>
