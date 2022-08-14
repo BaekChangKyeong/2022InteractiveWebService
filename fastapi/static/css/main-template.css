@@ -147,8 +147,8 @@
 
 /* block logo img */
 .logo-img {
-  width: 8%;
-  height: 3%;
+  width: 10%;
+  height: 5%;
 }
 
 @media screen and (max-width: 768px) {
@@ -451,7 +451,7 @@ table tbody tr {
 
 /* Designer Page Style */
 #wrapper {
-  padding: 5% 10% 5% 10%;
+  padding: 5% 12% 5% 12%;
   width: 100%;
   /* max-width: 100vw; */
 }
@@ -473,8 +473,8 @@ table tbody tr {
 }
 
 #container-out {
-  padding-left: 5%;
-  padding-right: 5%;
+  /* padding-left: 5%;
+  padding-right: 5%; */
   width: 100%;
 }
 
@@ -495,7 +495,7 @@ table tbody tr {
   margin-top: 3em;
   gap: 0%;
   row-gap: 2%;
-  column-gap: 1%;
+  column-gap: 2%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -549,7 +549,7 @@ table tbody tr {
   transition-duration: 1s;
   transition-timing-function: ease;
   transition-delay: 0s;
-  margin-bottom: 3%;
+  margin-bottom: 8%;
 }
 
 .gallery-grid {
@@ -571,16 +571,15 @@ table tbody tr {
 }
 
 .gallery-text {
-  margin: 1em;
+  margin-top: 20px;
   box-sizing: border-box;
   display: block;
   text-align: left;
   visibility: visible;
-  margin-bottom: 1em;
+  /* margin-bottom: 6%; */
   font-size: 20pt;
-  font-weight: 500;
+  font-weight: bold;
   word-break: keep-all;
-  color: #000000;
 }
 
 .gallery-project-text {
