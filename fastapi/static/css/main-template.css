@@ -8,7 +8,32 @@
 /* // REQUIRED STYLES
 // ========================================================== */
 
+/* hamburger-menubar */
+.burger {
+  display: none;
+  cursor: pointer;
+}
 
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  margin: 5px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.line2 {
+  opacity: 0;
+}
+
+.line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
 
 .scroll_down {
   position: absolute;
@@ -498,7 +523,7 @@ table tbody tr {
   column-gap: 2%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 0px;
   width: 100%;
   padding: 0px;
@@ -612,6 +637,41 @@ table tbody tr {
   vertical-align: middle;
 }
 
+.designer-img-src:hover {
+  filter: grayscale(0);
+  transition: filter 0.5s;
+  transition-property: filter;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+@media screen and (max-width: 768px) {
+  .designer-img-src {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    filter: grayscale(1) brightness(110%);
+    transition: filter 0.5s;
+    transition-property: filter;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    vertical-align: middle;
+  }
+
+  .designer-img-src:hover {
+    filter: grayscale(0);
+    transition: filter 0.5s;
+    transition-property: filter;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+}
+
 
 .project-img-src {
   /* transform: rotate(90deg); */
@@ -647,15 +707,6 @@ table tbody tr {
   transition-timing-function: ease;
   transition-delay: 0s;
   vertical-align: middle;
-}
-
-.designer-img-src:hover {
-  filter: grayscale(0);
-  transition: filter 0.5s;
-  transition-property: filter;
-  transition-duration: 0.5s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
 }
 
 @media only screen and (max-width: 768px) {
