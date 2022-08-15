@@ -50,14 +50,13 @@
   padding-left: 11%;
   /* margin-left: 11%; */
   padding-bottom: 9%;
-  /* opacity: 0.5; */
 }
 
 .about_word_logo {
   width: 9%;
   height: 3%;
   padding-top: 12.5%;
-  padding-bottom: 8%
+  padding-bottom: 8%;
 }
 
 .about_word_block_header {
@@ -602,7 +601,7 @@ table tbody tr {
   text-align: left;
   visibility: visible;
   /* margin-bottom: 6%; */
-  font-size: 20pt;
+  font-size: 16pt;
   font-weight: bold;
   word-break: keep-all;
 }
@@ -614,7 +613,7 @@ table tbody tr {
   text-align: left;
   visibility: visible;
   margin-bottom: 1em;
-  font-size: 20pt;
+  font-size: 16pt;
   font-weight: 500;
   word-break: keep-all;
   color: #000000;
