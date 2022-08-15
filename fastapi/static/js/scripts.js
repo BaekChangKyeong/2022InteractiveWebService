@@ -5,3 +5,15 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+
+const burger = document.querySelector(".burger");
+
+const handleNav = () => {
+    burger.classList.toggle("toggle");
+};
+
+const navSlide = () => {
+    burger.addEventListener("click", handleNav);
+};
+
+navSlide();
