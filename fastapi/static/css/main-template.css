@@ -747,8 +747,8 @@ table tbody tr {
 
 @media only screen and (min-width: 768px) and (max-width: 1550px) {
   #wrapper #container-out {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
   }
   .visible {
     max-width: 40%;
