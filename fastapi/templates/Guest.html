@@ -13,7 +13,8 @@
   <link href="{{ url_for('static', path='/css/main-template.css') }}" rel="stylesheet">
 
   <!-- 프리텐다드 폰트 적용 -->
-  <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
+  <link rel="stylesheet" type="text/css"
+    href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
 </head>
 
 <body>
@@ -21,13 +22,8 @@
   <nav class="navbar navbar-expand-lg navbar-black bg-white">
     <div class="container">
       <a class="navbar-brand"> </a>
-      <img
-        class="logo-img"
-        src="{{ url_for('static', path='/assets/logo/logo.svg') }}"
-        onclick="location.href='/about'" 
-        style="cursor:pointer" 
-        alt=""
-      />
+      <img class="logo-img" src="{{ url_for('static', path='/assets/logo/logo.svg') }}" onclick="location.href='/about'"
+        style="cursor:pointer" alt="" />
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">
@@ -64,94 +60,90 @@
   </nav>
 
 
-
-  <div class="container" style="padding-bottom: 15%;">
-    <h2 style="margin-top: 120px;">GUEST</h2>
-    <div class="comment_container">
-      <tr>
-        <td><input type="text" name="name" style="width: 188px; height: 50px;" class="guest_name"></td>
-      </tr>
-      <br>
-      <tr>
-        <td colspan=4>
-          <textarea placeholder="   당신의 글을 남겨주세요" name="content" style="height: 180px;" class="guest_comments"></textarea>
-        </td>
-      </tr>
-      <br>
-      <tr>
-        <td colspan=4 align=right><input type="button" value="확인" style="width: 74px; height: 38px; margin-left: auto; color: #ed731d;"
-            onclick=get_list()></td>
-      </tr>
-    </div>
-
-    <div class="form-group" style="display: none ;">
-      <select class="form-control" name="state" id="maxRows">
-        <option value="5000">Show ALL Rows</option>
-        <option value="5">5</option>
-        <option value="10">10</option>
-        <option value="15">15</option>
-        <option value="20">20</option>
-        <option value="50">50</option>
-        <option value="70">70</option>
-        <option value="100">100</option>
-      </select>
-    </div>
-    <h2>LIST</h2>
-    <table class="table table-striped table-class" id="table-id">
-
-      <thead>
+  <div id="wrapper">
+    <div class="container" style="padding-bottom: 15%;">
+      <h2 style="margin-top: 120px;">GUEST</h2>
+      <div class="comment_container">
         <tr>
-          <!-- <th>Name</th>
-          <th>Email</th>
-          <th>Date</th> -->
+          <td><input type="text" name="name" style="width: 188px; height: 50px;" class="guest_name"></td>
         </tr>
+        <br>
+        <tr>
+          <td colspan=4>
+            <textarea placeholder="   당신의 글을 남겨주세요" name="content" style="height: 180px;"
+              class="guest_comments"></textarea>
+          </td>
+        </tr>
+        <br>
+        <tr>
+          <td colspan=4 align=right><input type="button" value="확인"
+              style="width: 74px; height: 38px; margin-left: auto; color: #ed731d;" onclick=get_list()></td>
+        </tr>
+      </div>
+      <div class="form-group" style="display: none ;">
+        <select class="form-control" name="state" id="maxRows">
+          <option value="5000">Show ALL Rows</option>
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="50">50</option>
+          <option value="70">70</option>
+          <option value="100">100</option>
+        </select>
+      </div>
+      <h2>LIST</h2>
+      <table class="table table-striped table-class" id="table-id">
+  
+        <thead>
+          <tr>
+            <!-- <th>Name</th>
+            <th>Email</th>
+            <th>Date</th> -->
+          </tr>
+  
+        </thead>
+  
+        <tbody>
+  
+        </tbody>
+  
+      </table>
+  
+      <!--		Start Pagination -->
+      <div class='pagination-container'>
+        <nav class='pagination-nav'>
+          <ul class="pagination">
+  
+            <li data-page="prev">
+              <span>
+                < <span class="sr-only">(current)
+              </span></span>
+            </li>
+            <!--	Here the JS Function Will Add the Rows -->
+            <li data-page="next" id="prev">
+              <span> > <span class="sr-only">(current)</span></span>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-      </thead>
-
-      <tbody>
-
-      </tbody>
-
-    </table>
-
-    <!--		Start Pagination -->
-    <div class='pagination-container'>
-      <nav class='pagination-nav'>
-        <ul class="pagination">
-
-          <li data-page="prev">
-            <span>
-              < <span class="sr-only">(current)
-            </span></span>
-          </li>
-          <!--	Here the JS Function Will Add the Rows -->
-          <li data-page="next" id="prev">
-            <span> > <span class="sr-only">(current)</span></span>
-          </li>
-        </ul>
-      </nav>
     </div>
+
   </div>
   <!-- End of Container -->
-
-
-
   <!--  Developed By Yasser Mas -->
   </div>
 </body>
 <!-- 저작권 영역 -->
 <footer class="footer">
   <!-- <div style="float: left"> -->
-    <img
-      class="posterbox"
-      src="{{ url_for('static', path='/assets/posterbox/poster.svg') }}"
-      alt=""
-    />
-    <div class="footer_word">
-      <span>Konyang University</span><br><br>
-      <span>2022 6th Graudation Exhibition</span><br />
-      <span>Interdisciplinary Design</span>
-    </div>
+  <img class="posterbox" src="{{ url_for('static', path='/assets/posterbox/poster.svg') }}" alt="" />
+  <div class="footer_word">
+    <span>Konyang University</span><br><br>
+    <span>2022 6th Graudation Exhibition</span><br />
+    <span>Interdisciplinary Design</span>
+  </div>
 
   <!-- </div> -->
   <div style="position: fixed; bottom: 50px; right: 100px">
