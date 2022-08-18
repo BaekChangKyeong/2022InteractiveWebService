@@ -284,7 +284,9 @@ ul {
 
 table th,
 table td {
-  text-align: center;
+  text-align: left;
+  margin-left: 34px;
+  border: 1px solid #444444;
 }
 
 .pagination li:hover {
@@ -860,9 +862,9 @@ table tbody tr {
   padding: 6px 12px;
   margin-left: -1px;
   line-height: 1.42857143;
-  color: #337ab7;
+  color: #000;
   text-decoration: none;
-  background-color: #fff;
+  /* background-color: #fff; */
   border: 1px solid #ddd;
 }
 
@@ -896,10 +898,10 @@ table tbody tr {
 .pagination > .active > span:focus,
 .pagination > .active > span:hover {
   z-index: 3;
-  color: #fff;
+  color: #ed731d;
   cursor: default;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  /* background-color: #337ab7;
+  border-color: #337ab7; */
 }
 
 .pagination > .disabled > a,

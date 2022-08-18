@@ -24,9 +24,8 @@ function update_list() {
                 time_time = date[1].slice(0,5);
                 element = 
                     "<tr style='display: table-row;'>" + 
-                    "<td>" + row.designer + "</td>" +
-                    "<td>" + row.content + "</td>" +
-                    "<td>" + time_date + "   " + time_time + "</td></tr>";
+                    "<td>" + row.designer + "　　　" + time_date + "　　" + time_time + "<br><br>" +  row.content + 
+                    "</td></tr>";
                 $('#table-id > tbody').append(element);
             })
             getPagination('#table-id');
