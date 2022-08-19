@@ -46,10 +46,11 @@
   list-style: none;
   position: absolute;
   width: 100%;
-  top: 54%;
+  top: 57%;
   padding-left: 11%;
   /* margin-left: 11%; */
   padding-bottom: 9%;
+  background-color: #eee6;
 }
 
 .about_word_logo {
