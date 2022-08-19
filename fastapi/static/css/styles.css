@@ -4349,7 +4349,14 @@ fieldset:disabled .btn {
     column-gap: 0;
     z-index: 1;
   }
-  
+}
+
+@media screen and (max-width: 1440px) {
+  .navbar-collapse {
+    padding-right: 10%;
+    /* display: flex !important; */
+    flex-basis: auto;
+  }
 }
 
 
@@ -4653,7 +4660,12 @@ fieldset:disabled .btn {
     overflow-y: visible;
   }
 }
-@media (min-width: 1400px) {
+@media (max-width: 1440px) {
+  .navbar-nav {
+    column-gap: 5%;
+    font-size: 18pt;
+  }
+
   .navbar-expand-xxl {
     flex-wrap: nowrap;
     justify-content: flex-start;
