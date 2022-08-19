@@ -62,15 +62,15 @@
 
 .about_word_block_header {
   font-weight: bold;
-  font-size: 22pt;
+  font-size: 16pt;
   padding-bottom: 2%;
   padding-left: 0;
 }
 
 .about_word_block_content {
-  font-size: 22pt;
+  font-size: 16pt;
   padding-bottom: 4%;
-  width: 71%;
+  width: 53%;
   word-break: keep-all;
 }
 
@@ -107,8 +107,8 @@
     padding-top: 10px;
     padding-bottom: 12px;
     font-size: 8.5pt;
-    width: 90%;
-    word-break: keep-all;
+    width: 110%;
+    word-break: unset;
   }
 }
 
@@ -386,10 +386,12 @@ table tbody tr {
   bottom: 15%;
 }
 
-/* .footer_word {
-  position: fixed; 
-  left: 200px;
-} */
+.footer_top_icon {
+  position: fixed;
+  bottom: 33%;
+  right: 7.5%;
+  width: 3%;
+}
 
 @media screen and (max-width: 768px) {
   .footer {
@@ -411,6 +413,13 @@ table tbody tr {
     left: 3%;
     font-size: 1vh;
     top: 25%
+  }
+
+  .footer_top_icon {
+    position: fixed;
+    bottom: 33%;
+    right: 7.5%;
+    width: 8%;
   }
 }
 
@@ -492,12 +501,46 @@ table tbody tr {
     width: 290px;
     height: 378px;
   }
+
+  #board_title {
+    font-weight: bold;
+    font-size: 16pt;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  #board_email {
+    /* font-weight: r; */
+    font-size: 15pt;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    display: block;
+  }
+
+
 }
 
 @media screen and (max-width: 768px) {
   #profile_img {
-    width: 145px;
-    height: 189px;
+    width: 163px;
+    height: 228px;
+  }
+
+  #board_title {
+    font-weight: bold;
+    font-size: 14pt;
+    margin-bottom: 1%;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  #board_email {
+    /* font-weight: r; */
+    font-size: 14pt;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    display: block;
   }
 }
 
