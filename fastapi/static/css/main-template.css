@@ -8,6 +8,22 @@
 /* // REQUIRED STYLES
 // ========================================================== */
 
+.header_designer {
+  font-size: 30pt;
+  padding-top: 1%;
+  padding-bottom: 5%;
+  padding-left: 1%;
+  margin-bottom: 0;
+}
+
+.header_project {
+  font-size: 30pt;
+  padding-top: 1%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+  margin-bottom: 0;
+}
+
 /* hamburger-menubar */
 .burger {
   display: none;

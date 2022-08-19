@@ -4354,7 +4354,7 @@ fieldset:disabled .btn {
 @media screen and (max-width: 1440px) {
   .navbar-collapse {
     padding-right: 10%;
-    display: flex !important;
+    /* display: flex !important; */
     flex-basis: auto;
   }
 }
