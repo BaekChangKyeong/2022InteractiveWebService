@@ -101,7 +101,8 @@
   .about_word{
     padding-top: 2%;
     width: 80%;
-    margin-left: 2%;
+    margin-left: -5%;
+
     top: 100%;
     /* font-size: 14pt; */
     position: inherit;
