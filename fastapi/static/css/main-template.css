@@ -74,6 +74,7 @@
   height: 3%;
   padding-top: 12.5%;
   padding-bottom: 8%;
+  padding-left: 1%;
 }
 
 .about_word_block_header {
@@ -102,13 +103,12 @@
     padding-top: 2%;
     width: 80%;
     margin-left: -5%;
-
     top: 100%;
-    /* font-size: 14pt; */
+    font-size: 14pt;
     position: inherit;
     z-index: 1;
     padding-bottom: 6%;
-    /* background-color: #e7e6e5; */
+    background-color: #e7e6e5;
   }
 
   .about_word_block_header {
@@ -257,6 +257,7 @@ body {
   .main-video {
     padding-top: 60%;
     text-align: center;
+    background-color: #eee6;
   }
 }
 
@@ -326,8 +327,8 @@ table tbody tr {
 }
 
 .menu-trigger.active-1 span:nth-of-type(3) {
-  -webkit-transform: translateY(-20px) rotate(45deg);
-  transform: translateY(-20px) rotate(45deg);
+  /* -webkit-transform: translateY(-20px) rotate(45deg); */
+  transform: translateY(-1px) rotate(45deg);
 }
 
 .menu-trigger {
@@ -421,15 +422,16 @@ table tbody tr {
   .posterbox {
     position: initial;
     left: 6.25%;
-    width: 20%;
-    height: 85%;
+    width: 23%;
+    height: 97%;
     margin-top: 4%
     }
 
   .footer_word {
-    left: 3%;
-    font-size: 1vh;
-    top: 25%
+    left: -6%;
+    top: 9%;
+    font-size: 12pt;
+    -webkit-transform: scale(0.5);
   }
 
   .footer_top_icon {
