@@ -347,8 +347,8 @@ table tbody tr {
 /* type-01 */
 /* 중앙 라인이 고정된 자리에서 투명하게 사라지며 상하라인 회전하며 엑스자 만들기 */
 .menu-trigger.active-1 span:nth-of-type(1) {
-  -webkit-transform: translateY (20px) rotate (-45deg);
   transform: translateY(20px) rotate(-45deg);
+  background-color: #fff;
 }
 
 .menu-trigger.active-1 span:nth-of-type(2) {
@@ -356,8 +356,8 @@ table tbody tr {
 }
 
 .menu-trigger.active-1 span:nth-of-type(3) {
-  /* -webkit-transform: translateY(-20px) rotate(45deg); */
   transform: translateY(-1px) rotate(45deg);
+  background-color: #fff;
 }
 
 .menu-trigger {
@@ -652,7 +652,7 @@ table tbody tr {
 #wrapper {
   padding: 5% 12% 0% 12%;
   width: 100%;
-  background-color: white;
+  /* background-color: white; */
   /* max-width: 100vw; */
 }
 
