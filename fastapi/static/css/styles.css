@@ -4225,6 +4225,13 @@ fieldset:disabled .btn {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
 }
+
+@media screen and (max-width: 768px) {
+  .nav-link {
+    font-size: 16pt;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
@@ -4501,6 +4508,7 @@ fieldset:disabled .btn {
     overflow-y: visible;
   }
 }
+
 @media (min-width: 768px) {
   .navbar-expand-md {
     flex-wrap: nowrap;
