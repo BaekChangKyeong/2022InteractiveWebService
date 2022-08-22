@@ -554,15 +554,23 @@ table tbody tr {
 
 #board_profile {
   flex-flow: row;
-  max-width: 60%;
+  /* max-width: 60%; */
   display: flex;
   box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 11.5%;
 }
 
 @media screen and (max-width: 768px) {
   #board_profile {
     flex-flow: row;
     max-width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 20%;
   }
 }
 
@@ -656,9 +664,43 @@ table tbody tr {
   /* max-width: 100vw; */
 }
 
-#wrapper_2 {
-  padding: 5% 12% 5% 12%;
+#wrapper_designer_detail {
+  padding: 5% 12% 0% 12%;
+  width: 100%;
+  background-color: white;
+}
+
+#wrapper_designer_detail_content_2 {
+  padding: 7% 12% 5% 12%;
   position: relative;
+}
+
+.designer_detail_content_block_span {
+  color: #ed731d;
+  font-size: 40pt;
+}
+
+.designer_detail_content_block {
+  font-size: 40pt; 
+}
+
+.designer_detail_Project {
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 4%;
+}
+
+.designer-detail-img-src {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  width: 1056px;
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 11.5%;
 }
 
 /* Designer Page Style */
@@ -673,12 +715,50 @@ table tbody tr {
     padding: 5% 7.5% 5% 7.5%;
     width: 100%;
   }
+
+  #wrapper_designer_detail {
+    padding: 5% 7.5% 0% 7.5%;
+    width: 100%;
+    background-color: white;
+  }
+
+  .designer_detail_content_block_span {
+    color: #ed731d;
+    font-size: 12pt;
+  }
+  
+  .designer_detail_content_block {
+    font-size: 12pt; 
+  }
+
+  .designer_detail_Project {
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 6%;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1440px) {
   #wrapper_project {
     padding: 5% 8.5% 5% 8.5%;
     width: 100%;
+  }
+
+  #wrapper_designer_detail {
+    padding: 5% 8.5% 0% 8.5%;
+    width: 100%;
+    background-color: white;
+  }
+
+  .designer_detail_content_block_span {
+    color: #ed731d;
+    font-size: 24pt;
+  }
+  
+  .designer_detail_content_block {
+    font-size: 24pt; 
   }
 }
 
