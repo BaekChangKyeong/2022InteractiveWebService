@@ -382,6 +382,7 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  background-color: #e7e6e5;
 }
 
 button,
@@ -415,6 +416,7 @@ button:not(:disabled),
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled) {
   cursor: pointer;
+  z-index: 999;
 }
 
 ::-moz-focus-inner {
@@ -4225,6 +4227,13 @@ fieldset:disabled .btn {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
 }
+
+@media screen and (max-width: 768px) {
+  .nav-link {
+    font-size: 16pt;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
@@ -4232,7 +4241,7 @@ fieldset:disabled .btn {
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #ed731d;
+  color: #ed731d !important;
   text-decoration: underline;
 }
 .nav-link.disabled {
@@ -4501,6 +4510,7 @@ fieldset:disabled .btn {
     overflow-y: visible;
   }
 }
+
 @media (min-width: 768px) {
   .navbar-expand-md {
     flex-wrap: nowrap;
@@ -4664,6 +4674,19 @@ fieldset:disabled .btn {
   .navbar-nav {
     column-gap: 5%;
     font-size: 18pt;
+    top: 0;
+    height: 100vh;
+    width: 65%;
+    position: fixed;
+    background-color: #0009;
+    z-index: 3 !important;
+    right: 0;
+    padding-top: 25%;
+    padding-left: 5%;
+  }
+  .navbar-nav > .nav-item > .nav-link{
+    color: #fff;
+    padding-bottom: 11%;
   }
 
   .navbar-expand-xxl {
