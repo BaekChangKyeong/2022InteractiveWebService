@@ -10,6 +10,7 @@
 
 .header_designer {
   font-size: 30pt;
+  font-weight: bold;
   padding-top: 1%;
   padding-bottom: 5%;
   padding-left: 1%;
@@ -31,7 +32,16 @@
     font-weight: bold;
     padding-top: 1%;
     padding-bottom: 0;
-    /* padding-left: 1%; */
+    padding-left: 0%;
+    margin-bottom: 0;
+  }
+
+  .header_designer {
+    font-size: 14pt;
+    font-weight: bold;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    padding-left: 2%;
     margin-bottom: 0;
   }
 }
@@ -43,6 +53,15 @@
     padding-top: 1%;
     padding-bottom: 5%;
     padding-left: 0%;
+    margin-bottom: 0;
+  }
+
+  .header_designer {
+    font-size: 30pt;
+    font-weight: bold;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    padding-left: 1%;
     margin-bottom: 0;
   }
 }
@@ -93,11 +112,11 @@
 }
 
 .about_word_logo {
-  width: 9%;
-  height: 3%;
-  padding-top: 12.5%;
-  padding-bottom: 8%;
-  padding-left: 1%;
+  width: 10%;
+  height: 41%;
+  padding-top: 13.5%;
+  padding-bottom: 7.5%;
+  /* padding-left: 1%; */
 }
 
 .about_word_block_header {
@@ -655,6 +674,15 @@ table tbody tr {
   display: block;
 }
 
+#board_text_title{
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+#board_text{
+  font-size: 16pt;
+}
+
 /* Designer Page Style */
 #wrapper {
   padding: 5% 12% 0% 12%;
@@ -681,6 +709,7 @@ table tbody tr {
 
 .designer_detail_content_block {
   font-size: 40pt; 
+  font-weight: bold;
 }
 
 .designer_detail_Project {
@@ -699,7 +728,7 @@ table tbody tr {
   width: 1056px;
   max-width: 100%;
   height: auto;
-  padding-bottom: 11.5%;
+  margin-bottom: 11.5%;
 }
 
 /* Designer Page Style */
@@ -728,6 +757,7 @@ table tbody tr {
   
   .designer_detail_content_block {
     font-size: 12pt; 
+    font-weight: bold;
   }
 
   .designer_detail_Project {
@@ -1034,8 +1064,8 @@ table tbody tr {
 
 @media only screen and (max-width: 768px) {
   #wrapper {
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 6%;
+    padding-right: 6%;
   }
   .visible {
     width: 45%;

@@ -86,7 +86,8 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  /* font-family: var(--bs-body-font-family); */
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -4362,7 +4363,7 @@ fieldset:disabled .btn {
 
 @media screen and (max-width: 1440px) {
   .navbar-collapse {
-    padding-right: 10%;
+    padding-right: 16%;
     /* display: flex !important; */
     flex-basis: auto;
   }
@@ -4417,6 +4418,7 @@ fieldset:disabled .btn {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  margin-right: 3%;
 }
 
 .navbar-toggler {
