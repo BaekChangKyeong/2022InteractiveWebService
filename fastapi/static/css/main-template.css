@@ -674,6 +674,15 @@ table tbody tr {
   display: block;
 }
 
+#board_text_title{
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+#board_text{
+  font-size: 16pt;
+}
+
 /* Designer Page Style */
 #wrapper {
   padding: 5% 12% 0% 12%;
@@ -719,7 +728,7 @@ table tbody tr {
   width: 1056px;
   max-width: 100%;
   height: auto;
-  padding-bottom: 11.5%;
+  margin-bottom: 11.5%;
 }
 
 /* Designer Page Style */
