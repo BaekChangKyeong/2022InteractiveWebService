@@ -292,6 +292,12 @@ section {
   /* background-color: black; */
 }
 
+@media screen and (max-width: 768px) {
+  section {
+    padding-bottom: 48px;
+  }
+}
+
 html,
 body {
   height: 100%;
@@ -583,7 +589,33 @@ table tbody tr {
 @media screen and (max-width: 768px) {
   #board_main {
     /* flex-flow: column; */
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
+    flex-direction: row-reverse;
+  }
+
+  #board_content {
+    margin-top: auto !important; 
+    width: 45% !important;
+    margin-top: 55% !important;
+    margin-right: 7% !important;
+    padding-left: 5% !important;
+  }
+
+  #board_title {
+    font-weight: bold;
+    font-size: 12pt;
+    margin-bottom: 3%;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  #board_title_2 {
+    font-weight: bold!important;
+    font-size: 14pt!important;
+    margin-left: -134%!important;
+    margin-bottom: 3%!important;
+    box-sizing: border-box!important;
+    display: block!important;
   }
 }
 
@@ -640,6 +672,14 @@ table tbody tr {
     display: block;
   }
 
+  #board_title_2 {
+    font-weight: bold;
+    font-size: 16pt;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    display: block;
+  }
+
   #board_email {
     /* font-weight: r; */
     font-size: 15pt;
@@ -655,26 +695,43 @@ table tbody tr {
   #profile_img {
     width: 163px;
     height: 228px;
+
   }
 
   #board_title {
-    font-weight: bold;
-    font-size: 14pt;
-    margin-bottom: 1%;
-    box-sizing: border-box;
-    display: block;
+    font-weight: bold!important;
+    font-size: 12pt!important;
+    margin-bottom: 1%!important;
+    box-sizing: border-box!important;
+    display: block!important;
   }
 
   #board_email {
     /* font-weight: r; */
-    font-size: 14pt;
-    margin-bottom: 2%;
-    box-sizing: border-box;
-    display: block;
+    font-size: 10pt!important;
+    margin-bottom: 2%!important;
+    box-sizing: border-box!important;
+    display: block!important;
+  }
+
+  #board_introduce {
+    width: 255%!important;
+    font-size: 12pt!important;
+    box-sizing: border-box!important;
+    display: block!important;
+    margin-left: -134%!important;
   }
 }
 
 #board_title {
+  font-weight: bold;
+  font-size: 18pt;
+  margin-bottom: 3%;
+  box-sizing: border-box;
+  display: block;
+}
+
+#board_title_2 {
   font-weight: bold;
   font-size: 18pt;
   margin-bottom: 3%;
