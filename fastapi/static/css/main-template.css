@@ -8,12 +8,6 @@
 /* // REQUIRED STYLES
 // ========================================================== */
 
-.designer_detail_interview {
-  text-align: center; 
-  width: 60%; 
-  margin: auto;
-}
-
 .header_designer {
   font-size: 30pt;
   font-weight: bold;
@@ -30,6 +24,12 @@
   padding-bottom: 5%;
   padding-left: 2%;
   margin-bottom: 0;
+}
+
+#designer_detail_interview {
+  text-align: center;
+  width: 60%;
+  margin: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -49,6 +49,20 @@
     padding-bottom: 5%;
     padding-left: 2%;
     margin-bottom: 0;
+  }
+
+  #designer_detail_interview {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+
+  #board_text_title {
+    font-size: 8pt !important;
+  }
+
+  #board_text {
+    font-size: 8pt !important;
   }
 }
 
@@ -770,7 +784,7 @@ table tbody tr {
   }
 
   .designer_detail_Project {
-    font-size: 14pt;
+    font-size: 12pt;
     font-weight: bold;
     text-align: center;
     justify-content: center;
