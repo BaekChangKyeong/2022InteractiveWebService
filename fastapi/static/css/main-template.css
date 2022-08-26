@@ -434,7 +434,7 @@ table tbody tr {
 
 .footer {
   width: 100%;
-  height: 20%;
+  height: 176px;
   margin-bottom: 0%;
   top: 15%;
   position: relative;
@@ -493,7 +493,7 @@ table tbody tr {
 @media screen and (min-width: 769px) and (max-width: 1440px) {
   .footer {
     width: 100%;
-    height: 20%;
+    height: 176px;
     margin-bottom: 0%;
     top: 19%;
     position: relative;
@@ -562,12 +562,15 @@ table tbody tr {
 
 @media screen and (max-width: 768px) {
   #board_main {
-    flex-flow: column;
+    /* flex-flow: column; */
+    justify-content: flex-start;
   }
 }
 
 #board_content {
   margin-top: auto;
+  width: 45%;
+  margin-right: 6%;
 }
 
 #board_profile {
