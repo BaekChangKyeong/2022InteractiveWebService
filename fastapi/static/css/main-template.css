@@ -8,6 +8,12 @@
 /* // REQUIRED STYLES
 // ========================================================== */
 
+.designer_detail_interview {
+  text-align: center; 
+  width: 60%; 
+  margin: auto;
+}
+
 .header_designer {
   font-size: 30pt;
   font-weight: bold;
