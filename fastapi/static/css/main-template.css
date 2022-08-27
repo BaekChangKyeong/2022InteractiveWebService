@@ -330,7 +330,7 @@ body {
   .main-video {
     padding-top: 60%;
     text-align: center;
-    background-color: #eee6;
+    background-color: #e7e7e7 hsl(53, 14, 300) !important;
   }
 }
 
@@ -832,11 +832,11 @@ table tbody tr {
 
   .designer_detail_content_block_span {
     color: #ed731d;
-    font-size: 12pt;
+    font-size: 10pt;
   }
   
   .designer_detail_content_block {
-    font-size: 12pt; 
+    font-size: 10pt; 
     font-weight: bold;
   }
 
