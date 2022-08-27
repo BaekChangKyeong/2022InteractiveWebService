@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>2022 KYU B:LOCK</title>
+    <!-- Favicon-->
+    <link
+      rel="icon"
+      href="{{ url_for('static', path='/assets/posterbox/poster.svg') }}"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+    <link
+      href="{{ url_for('static', path='/css/styles.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', path='/css/main-template.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-black bg-white">
+      <div class="container">
+        <a class="navbar-brand"> </a>
+        <img
+          class="logo-img"
+          src="{{ url_for('static', path='/assets/logo/logo.svg') }}"
+          onclick="location.href='/about'" 
+          style="cursor:pointer" 
+          alt=""
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <a class="menu-trigger" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/project"> &nbsp;&nbsp;PROJECT&nbsp;&nbsp; </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/designer"> &nbsp;&nbsp;DESIGNER&nbsp;&nbsp; </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/guest"> &nbsp;&nbsp;GUESTBOOK&nbsp;&nbsp; </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <body>  
+      <div id="wrapper_designer_detail">
+        <div id="container_out">
+          <div id="container-in">
+            <article id="board_view">
+              <div>PROFILE</div>
+              <section id="board_main">
+                <!-- <div id="board_profile"> -->
+                  
+                  <div id="board_content">
+                    <div id="board_title">
+                      <div>강신욱</div>
+                    </div>
+                    <div id="board_email">
+                      <div>opc2233@naver.com</div>
+                      <!-- href="mailto:rla081089@gmail.com" -->
+                      <div>portfolio</div>
+                    </div>
+                    <!-- <div id="">
+                      <div>portfolio</div>
+                    </div> -->
+
+                    <div id="board_title_2">
+                      <div>Introduce</div>
+                    </div>
+                    <div id="board_introduce">
+                      <div>이번에 졸업하게 된 18학번 강신욱입니다. 전공은 영상 디자인쪽으로 공부중이고, 졸업작품으로는 제 소개를 간략하게 담은 모션그래픽 영상을 준비했어요. 저희 졸업준비회 준비 많이 했으니까 재밌게 감상해주시면 감사하겠습니다! </div>
+                    </div>
+                  </div>
+                  <div id="board_img">
+                    <img
+                      src="{{ url_for('static', path='../static/assets/designer-profile/Kang_Shinwook.png') }}"
+                      id="profile_img"
+                    />
+                  </div>
+                  
+                <!-- </div> -->
+              </section>
+            </article>
+            
+          </div>
+        </div>
+      </div>
+      <div id="wrapper_designer_detail_content_2">
+        <div id="board_profile">
+          <div class="designer_detail_content_block">
+          <span class="designer_detail_content_block_span"> 비록 </span>
+          내가 없지만...다들 잘지낼수 있지..? <br>보고싶을거야...</div>
+        </div>
+        <div class="designer_detail_Project">
+          Project
+        </div>
+        <div style="text-align: center;">
+          <a href="/projects/shinwook">
+            <img class="designer-detail-img-src" src="../static/assets/projects_2/shinwook.jpg"/>
+          </a>
+        </div>  
+        <div class="designer_detail_Project">
+          Interview
+        </div>
+        <div id="designer_detail_interview">
+          <div id="board_text_title">
+            1. 졸업전시회를 준비하면서 가장 기억에 남는 순간은?<br><br>
+          </div>
+          <div id="board_text">
+            아무래도 회의시간들이 가장 기억에 남는것 같습니다. 전체적으로 졸업전시회를 구성하면서 진행상황을 같이 토론하고 무엇보다도 한눈에 저희가 '정말 졸업을 앞두고 있구나', '졸업 전에 이런 작품을 만들어서 관람하시는 분들께 보여줄 수 있겠구나'를 직접적으로 느껴져서 항상 그 시간들이 뜻깊은 순간들이였습니다! <br><br><br><br><br><br>
+          </div>
+          <div id="board_text_title">
+            2. 대학생활 중 기억에 남는 일 한 가지는? <br><br>
+          </div>
+          <div id="board_text">
+            휴학했을때가 그나마 가장 기억에 남았던거 같아요. 비록 제가 원해서 한 휴학은 아녔지만, 다양한 경험을 하면서 제가 뭘 하고 싶은지 방향성을 잡을 수 있던 시간이였던것 같습니다. <br><br><br><br><br><br>
+          </div>
+          <div id="board_text_title">
+            3. "비록"을 넣어 한 마디! <br><br>  
+          </div>
+          <div id="board_text">
+            비록..내가 없지만...다들 잘지낼수 있지..? 보고싶을거야...<br><br><br><br><br><br><br>
+          </div>
+        </div>
+      </div>
+
+
+  <!-- 저작권 영역 -->
+  <footer class="footer">
+    <!-- <div style="float: left"> -->
+    <img class="posterbox" src="{{ url_for('static', path='/assets/posterbox/poster.svg') }}" alt="" />
+    <div class="footer_word">
+      <span>Konyang University</span><br><br>
+      <span>2022 6th Graudation Exhibition</span><br />
+      <span>Interdisciplinary Design</span>
+    </div>
+
+    <a href="#" class="footer_top_icon">
+      <img src="{{ url_for('static', path='/assets/top-logo/top.svg') }}" alt="">
+    </a>
+  </footer>
+    </body>
+    
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', path='js/main-template.js') }}"></script>
+    <!-- Core theme JS-->
+    <script src="{{ url_for('static', path='js/scripts.js') }}"></script>
+  </body>
+</html>
