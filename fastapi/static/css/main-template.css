@@ -1079,6 +1079,21 @@ table tbody tr {
   transition-delay: 0s;
 }
 
+.designer-img-src-none {
+  width: 324px;
+  height: 422px;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  /* filter: grayscale(1) brightness(110%); */
+  transition: filter 0.5s;
+  transition-property: filter;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  vertical-align: middle;
+}
+
 @media screen and (max-width: 768px) {
   .designer-img-src {
     width: 100%;
@@ -1102,6 +1117,21 @@ table tbody tr {
     transition-duration: 0.5s;
     transition-timing-function: ease;
     transition-delay: 0s;
+  }
+
+  .designer-img-src-none {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    /* filter: grayscale(1) brightness(110%); */
+    transition: filter 0.5s;
+    transition-property: filter;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    vertical-align: middle;
   }
 }
 

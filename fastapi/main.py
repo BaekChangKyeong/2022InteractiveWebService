@@ -5,7 +5,7 @@ from fastapi.requests import Request
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles 
 # from fastapi.model import guestbook
-import model, database 
+import model, database
 from prometheus_fastapi_instrumentator import Instrumentator
 
 app = FastAPI()
