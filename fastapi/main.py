@@ -5,9 +5,14 @@ from fastapi.requests import Request
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles 
 # from fastapi.model import guestbook
-import model, database
+import model, database 
+from prometheus_fastapi_instrumentator import Instrumentator
 
 app = FastAPI()
+
+@app.on_event("startup")
+async def startup():
+    Instrumentator().instrument(app).expose(app)
 
 templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static") 
