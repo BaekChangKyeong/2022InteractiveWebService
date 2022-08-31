@@ -502,7 +502,7 @@ table tbody tr {
     }
 
   .footer_word {
-    left: -4%;
+    left: 0%;
     top: 9%;
     font-size: 12pt;
     -webkit-transform: scale(0.5);
