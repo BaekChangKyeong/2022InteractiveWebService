@@ -1,9 +1,6 @@
-console.log('aa')
 $(document).ready(update_list())
-console.log('bb')
 
 function update_list() {
-    console.log("get_list")
     $.ajax({
         url: '/guestbook',
         method: 'GET',
@@ -14,7 +11,6 @@ function update_list() {
         beforeSend: function () { },
         success: function (response) {
             // alert(response[0].designer)
-            console.log(response)
             $('#table-id > tbody').empty()
             $.each(response, function (i, row) {
                 i = i + 1
@@ -41,22 +37,26 @@ function update_list() {
 // TODO "flag 처리 (안보임처리 해야함)"
 
 function get_list() {
-    console.log("get_list")
     let name = $('.guest_name')[0].value;
     let writer = $('.guest_name')[0].value;
     let comments = $('.guest_comments')[0].value;
-    let insert_db_data = JSON.stringify({
-        "designer": String(name),
-        "writer": String(writer),
-        "content": String(comments)
-    })
-    console.log(insert_db_data);
 
-    fetch("/insertbook", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: insert_db_data,
-    }).then(location.reload());
+    if (comments == ""){alert("글을 입력해주세요.")}
+    if (name == ""){alert("이름을 입력해주세요.")}
+
+    if (comments != "" && name != ""){
+        let insert_db_data = JSON.stringify({
+            "designer": String(name),
+            "writer": String(writer),
+            "content": String(comments)
+        })
+    
+        fetch("/insertbook", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: insert_db_data,
+        }).then(location.reload());
+    }
 }
