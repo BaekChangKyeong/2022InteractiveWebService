@@ -15,7 +15,6 @@ function getPagination(table) {
 
   $('#maxRows').on('change', function (evt) {
     //$('.paginationprev').html('');						// reset pagination
-    console.log('click row');
     lastPage = 1;
     $('.pagination').find('li').slice(1, -1).remove();
     var trnum = 0; // reset tr counter
