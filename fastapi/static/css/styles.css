@@ -673,7 +673,6 @@ progress {
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 30%;
 }
 
 @media (min-width: 576px) {
@@ -4244,7 +4243,7 @@ fieldset:disabled .btn {
 .nav-link:hover,
 .nav-link:focus {
   color: #ed731d !important;
-  /* text-decoration: underline; */
+  text-decoration: underline;
 }
 .nav-link.disabled {
   color: #6c757d;
