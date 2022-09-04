@@ -135,7 +135,7 @@
   padding-left: 8%;
   bottom: 0;
   padding-bottom: 9%;
-  background-color: #eee6;
+  background-color: #eee9;
 }
 
 .about_word_logo {
@@ -726,6 +726,14 @@ table tbody tr {
     display: block!important;
   }
 
+  #board_email_seokyoung {
+    /* font-weight: r; */
+    font-size: 8pt!important;
+    margin-bottom: 2%!important;
+    box-sizing: border-box!important;
+    display: block!important;
+  }
+
   #board_introduce {
     width: 255%!important;
     font-size: 12pt!important;
@@ -752,7 +760,15 @@ table tbody tr {
 }
 
 #board_email {
-  /* font-weight: r; */
+  /* font-weight: ; */
+  font-size: 16pt;
+  margin-bottom: 8%;
+  box-sizing: border-box;
+  display: block;
+}
+
+#board_email_seokyoung {
+  /* font-weight: ; */
   font-size: 16pt;
   margin-bottom: 8%;
   box-sizing: border-box;
@@ -1061,7 +1077,7 @@ table tbody tr {
   visibility: visible;
   margin-bottom: 1em;
   font-size: 14pt;
-  font-weight: 500;
+  font-weight: bold;
   word-break: keep-all;
   color: #000000;
   display: flex;
@@ -1070,7 +1086,7 @@ table tbody tr {
 
 .designer-img-src {
   width: 300px;
-  height: 415px;
+  height: 400px;
   padding: 0;
   border: 0;
   box-sizing: border-box;
@@ -1094,7 +1110,7 @@ table tbody tr {
 
 .designer-img-src-none {
   width: 300px;
-  height: 415px;
+  height: 400px;
   padding: 0;
   border: 0;
   box-sizing: border-box;
@@ -1204,7 +1220,7 @@ table tbody tr {
     visibility: visible;
     margin-bottom: 1em;
     font-size: 10pt;
-    font-weight: 500;
+    font-weight: bold;
     word-break: keep-all;
     color: #000000;
   }
@@ -1216,7 +1232,7 @@ table tbody tr {
     visibility: visible;
     margin-bottom: 1em;
     font-size: 10pt;
-    font-weight: 500;
+    font-weight: bold;
     word-break: keep-all;
     color: #000000;
   }
@@ -1242,7 +1258,7 @@ table tbody tr {
     margin-bottom: 1em;
     font-size: 14pt;
     font-weight: 100;
-    font-weight: 500;
+    font-weight: bold;
     word-break: keep-all;
     color: #000000;
   }
