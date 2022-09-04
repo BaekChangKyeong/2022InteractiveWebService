@@ -4243,7 +4243,7 @@ fieldset:disabled .btn {
 .nav-link:hover,
 .nav-link:focus {
   color: #ed731d !important;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .nav-link.disabled {
   color: #6c757d;
