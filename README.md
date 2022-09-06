@@ -2,25 +2,10 @@
 
 2022 건양대 디자인과 후배들을 위한 졸업전시 웹 서비스
 
-Stack Version
+develop by 
+   백창경
+   qorckdrud@naver.com
+   
+   임현진
+   lhj9604@naver.com
 
-1. Infrastructure  
-   VirtualBox: 6.1.34 (2022-05-24 Latest)  
-   Linux: 20.04.4 LTS
-
-2. DB, DBMS  
-   PostgreSQL: Ubuntu 14.3-1.pgdg20.04+1 (2022-05-24 Latest)  
-   DBeaver: 22.0.5 (2022-05-24 Latest)
-
-3. java  
-   jdk: 11.0.15 (2022-05-25 Latest)
-
-4. Framework  
-   SpringBoot:
-
-5. Frontend  
-   javascript: 1.7  
-   React: npm 6.14.4 (react-bootstrap@2.4.0, bootstrap@5.1.3)
-
-6. Browser  
-   Chrome: 102.0.5005.63 (2022-05-25 Latest, Continuosly Update)
