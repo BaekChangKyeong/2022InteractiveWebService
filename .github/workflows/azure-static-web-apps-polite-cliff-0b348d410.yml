@@ -1,5 +1,10 @@
 name: Azure Static Web Apps CI/CD
 
+env: 
+  APP_LOCATION: "/" # location of your client code
+  API_LOCATION: "/fastapi" # location of your api source code - optional
+  OUTPUT_LOCATION: "/fastapi/templates" # location of client code build output
+
 on:
   push:
     branches:
